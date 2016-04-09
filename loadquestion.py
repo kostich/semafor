@@ -4,6 +4,7 @@ import os, sys, sqlite3, tempfile
 
 from config import *
 from checkanswer import *
+from random import shuffle
 
 def loadquestion(questionnum, part, window):
     conn = sqlite3.connect(programdir + '/data.db')
@@ -357,7 +358,9 @@ def loadquestion(questionnum, part, window):
     query = 'SELECT possible_answers FROM ' + part + ' WHERE id = ' +questionnum
     c.execute(query)
     answers = c.fetchall()
+    # Randomize the answers
     answers = str(answers).split('\\n')
+    shuffle(answers)
 
     try:
         window.answer1.show()
@@ -378,6 +381,7 @@ def loadquestion(questionnum, part, window):
         window.answer2.hide()
         try:
             previousanswer = str(answers[0])
+            previousanswer = previousanswer.replace('[(\'','')
             previousanswer = previousanswer.replace('\',)]','')
             window.label1.set_label(previousanswer + '.')
         except IndexError:
@@ -393,6 +397,7 @@ def loadquestion(questionnum, part, window):
         window.answer3.hide()
         try:
             previousanswer = str(answers[1])
+            previousanswer = previousanswer.replace('[(\'','')
             previousanswer = previousanswer.replace('\',)]','')
             window.label2.set_label(previousanswer + '.')
         except IndexError:
@@ -408,6 +413,7 @@ def loadquestion(questionnum, part, window):
         window.answer4.hide()
         try:
             previousanswer = str(answers[2])
+            previousanswer = previousanswer.replace('[(\'','')
             previousanswer = previousanswer.replace('\',)]','')
             window.label3.set_label(previousanswer + '.')
         except IndexError:
@@ -423,6 +429,7 @@ def loadquestion(questionnum, part, window):
         window.answer5.hide()
         try:
             previousanswer = str(answers[3])
+            previousanswer = previousanswer.replace('[(\'','')
             previousanswer = previousanswer.replace('\',)]','')
             window.label4.set_label(previousanswer + '.')
         except IndexError:
@@ -438,6 +445,7 @@ def loadquestion(questionnum, part, window):
         window.answer6.hide()
         try:
             previousanswer = str(answers[4])
+            previousanswer = previousanswer.replace('[(\'','')
             previousanswer = previousanswer.replace('\',)]','')
             window.label5.set_label(previousanswer + '.')
         except IndexError:
