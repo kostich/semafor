@@ -1,32 +1,12 @@
 #!/usr/bin/python3 -B
 
-# old imports
-# from config import *
-# from loadquestion import *
-# from checkanswer import *
-# from gi.repository import Gtk, Gio, GLib, Gdk
-
-# import os
-# import sys
-# import gi
-# import sqlite3
-# import signal
-# import tempfile
-# import mainwindow
-# gi.require_version('Gtk', '3.0')
-
 import signal
-
-
 import gi
 gi.require_version('Gtk', '3.0')
+import mainwindow
 
 from gi.repository import Gtk, Gio
-
-import mainwindow
 from loadquestion import *
-
-
 
 currentobsip = 0
 currentpmio = 0

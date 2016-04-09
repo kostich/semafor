@@ -1,6 +1,7 @@
 #!/usr/bin/python3 -B
 
 import sqlite3
+
 from config import *
 
 def checkanswer(questionnum, part, answer, window, checkbutton, label):
@@ -29,7 +30,6 @@ def checkanswer(questionnum, part, answer, window, checkbutton, label):
             if answer == correctanswer[0]:
                 label.set_markup("<span foreground='#269F19'>" +
                 origanswer + "</span>")
-                answer.set_disabled(True)
                 return True
             else:
                 label.set_markup("<span foreground='#B92300'>" +
@@ -39,7 +39,6 @@ def checkanswer(questionnum, part, answer, window, checkbutton, label):
             if answer == correctanswer[0] or answer == correctanswer[1]:
                 label.set_markup("<span foreground='#269F19'>" +
                 origanswer + "</span>")
-                answer.set_disabled(True)
                 return True
             else:
                 label.set_markup("<span foreground='#B92300'>" +
@@ -50,7 +49,6 @@ def checkanswer(questionnum, part, answer, window, checkbutton, label):
         answer == correctanswer[2]:
                 label.set_markup("<span foreground='#269F19'>" +
                 origanswer + "</span>")
-                answer.set_disabled(True)
                 return True
             else:
                 label.set_markup("<span foreground='#B92300'>" +

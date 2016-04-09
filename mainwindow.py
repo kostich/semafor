@@ -2,6 +2,7 @@
 
 import gi, sqlite3, tempfile
 gi.require_version('Gtk', '3.0')
+
 from config import *
 from gi.repository import Gtk, Gio, GLib, Gdk
 

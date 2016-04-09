@@ -1,6 +1,7 @@
 #!/usr/bin/python3 -B
 
 import os, sys, sqlite3, tempfile
+
 from config import *
 from checkanswer import *
 
