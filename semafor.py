@@ -7,6 +7,7 @@ import mainwindow
 
 from gi.repository import Gtk, Gio
 from loadquestion import *
+from random import randint
 
 currentobsip = 0
 currentpmio = 0
@@ -43,11 +44,12 @@ class Semafor(Gtk.Application):
         self.win.selwinbuilder.connect_signals(handlersselwin)
 
         # handlers for arrows in headerbar
-        handlersarrows = {
+        handlersquestions = {
             "on_leftarrow_clicked": self.previousquestion,
-            "on_rightarrow_clicked": self.nextquestion
+            "on_rightarrow_clicked": self.nextquestion,
+            "on_random_toggled": self.random_toggled
         }
-        self.win.hbbuilder.connect_signals(handlersarrows)
+        self.win.hbbuilder.connect_signals(handlersquestions)
 
         # handlers for answer checkbuttons in questionwindow
         handlersanswers = {
@@ -62,6 +64,7 @@ class Semafor(Gtk.Application):
 
         self.win.show_all()
         self.win.arrowbox.hide()
+        self.win.randombutton.hide()
 
     def do_startup(self):
         Gtk.Application.do_startup(self)
@@ -308,6 +311,24 @@ class Semafor(Gtk.Application):
             self.ptilv_action.set_enabled(False)
             self.categoryselect_action.set_enabled(False)
 
+    def random_toggled(self, button):
+        if self.win.randombutton.get_active() == True:
+            self.win.leftarrow.set_sensitive(False)
+            self.win.rightarrow.set_sensitive(True)
+        else:
+            currentps = 1
+            currentss = 1
+            currentnut = 1
+            currentpnp = 1
+            currentpmio = 1
+            currenttuzv = 1
+            currentdussn = 1
+            currentobsip = 1
+            currentptilv = 1
+            currentvuiov = 1
+            currentvozaci = 1
+            currentvozila = 1
+
     def nextquestion(self, button):
         global currentobsip, currentpmio, currentpnp, currentps, currentss
         global currentvozaci, currentdussn, currentvuiov, currentnut
@@ -321,105 +342,154 @@ class Semafor(Gtk.Application):
         total = c.fetchone()[0]
 
         if part == "obsip":
-            # recalculate current question number for this part and
-            # then load the question.
+            # if the random toggle is on, load a random question
+            # if not, recalculate current question number for this part
+            # and then load the question.
             # also check if we are on the first or last question and set
             # the left and right arrow accordingly
-            if currentobsip <= total:
-                currentobsip = currentobsip + 1
+            if self.win.randombutton.get_active() == True:
+                currentobsip = randint(1, total)
                 loadquestion(str(currentobsip), part, self.win)
-            if currentobsip >= 2 and currentobsip <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currentobsip >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currentobsip <= total:
+                    currentobsip = currentobsip + 1
+                    loadquestion(str(currentobsip), part, self.win)
+                if currentobsip >= 2 and currentobsip <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currentobsip >= total:
+                    self.win.rightarrow.set_sensitive(False)
         elif part == "pmio":
-            if currentpmio <= total:
-                currentpmio = currentpmio + 1
+            if self.win.randombutton.get_active() == True:
+                currentpmio = randint(1, total)
                 loadquestion(str(currentpmio), part, self.win)
-            if currentpmio >= 2 and currentpmio <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currentpmio >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currentpmio <= total:
+                    currentpmio = currentpmio + 1
+                    loadquestion(str(currentpmio), part, self.win)
+                if currentpmio >= 2 and currentpmio <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currentpmio >= total:
+                    self.win.rightarrow.set_sensitive(False)
         elif part == "pnp":
-            if currentpnp <= total:
-                currentpnp = currentpnp + 1
+            if self.win.randombutton.get_active() == True:
+                currentpnp = randint(1, total)
                 loadquestion(str(currentpnp), part, self.win)
-            if currentpnp >= 2 and currentpnp <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currentpnp >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currentpnp <= total:
+                    currentpnp = currentpnp + 1
+                    loadquestion(str(currentpnp), part, self.win)
+                if currentpnp >= 2 and currentpnp <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currentpnp >= total:
+                    self.win.rightarrow.set_sensitive(False)
         elif part == "ps":
-            if currentps <= total:
-                currentps = currentps + 1
+            if self.win.randombutton.get_active() == True:
+                currentps = randint(1, total)
                 loadquestion(str(currentps), part, self.win)
-            if currentps >= 2 and currentps <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currentps >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currentps <= total:
+                    currentps = currentps + 1
+                    loadquestion(str(currentps), part, self.win)
+                if currentps >= 2 and currentps <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currentps >= total:
+                    self.win.rightarrow.set_sensitive(False)
         elif part == "ss":
-            if currentss <= total:
-                currentss = currentss + 1
+            if self.win.randombutton.get_active() == True:
+                currentss = randint(1, total)
                 loadquestion(str(currentss), part, self.win)
-            if currentss >= 2 and currentss <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currentss >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currentss <= total:
+                    currentss = currentss + 1
+                    loadquestion(str(currentss), part, self.win)
+                if currentss >= 2 and currentss <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currentss >= total:
+                    self.win.rightarrow.set_sensitive(False)
         elif part == "vozaci":
-            if currentvozaci <= total:
-                currentvozaci = currentvozaci + 1
+            if self.win.randombutton.get_active() == True:
+                currentvozaci = randint(1, total)
                 loadquestion(str(currentvozaci), part, self.win)
-            if currentvozaci >= 2 and currentvozaci <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currentvozaci >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currentvozaci <= total:
+                    currentvozaci = currentvozaci + 1
+                    loadquestion(str(currentvozaci), part, self.win)
+                if currentvozaci >= 2 and currentvozaci <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currentvozaci >= total:
+                    self.win.rightarrow.set_sensitive(False)
         elif part == "dussn":
-            if currentdussn <= total:
-                currentdussn = currentdussn + 1
+            if self.win.randombutton.get_active() == True:
+                currentdussn = randint(1, total)
                 loadquestion(str(currentdussn), part, self.win)
-            if currentdussn >= 2 and currentdussn <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currentdussn >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currentdussn <= total:
+                    currentdussn = currentdussn + 1
+                    loadquestion(str(currentdussn), part, self.win)
+                if currentdussn >= 2 and currentdussn <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currentdussn >= total:
+                    self.win.rightarrow.set_sensitive(False)
         elif part == "vuiov":
-            if currentvuiov <= total:
-                currentvuiov = currentvuiov + 1
+            if self.win.randombutton.get_active() == True:
+                currentvuiov = randint(1, total)
                 loadquestion(str(currentvuiov), part, self.win)
-            if currentvuiov >= 2 and currentvuiov <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currentvuiov >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currentvuiov <= total:
+                    currentvuiov = currentvuiov + 1
+                    loadquestion(str(currentvuiov), part, self.win)
+                if currentvuiov >= 2 and currentvuiov <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currentvuiov >= total:
+                    self.win.rightarrow.set_sensitive(False)
         elif part == "nut":
-            if currentnut <= total:
-                currentnut = currentnut + 1
+            if self.win.randombutton.get_active() == True:
+                currentnut = randint(1, total)
                 loadquestion(str(currentnut), part, self.win)
-            if currentnut >= 2 and currentnut <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currentnut >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currentnut <= total:
+                    currentnut = currentnut + 1
+                    loadquestion(str(currentnut), part, self.win)
+                if currentnut >= 2 and currentnut <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currentnut >= total:
+                    self.win.rightarrow.set_sensitive(False)
         elif part == "vozila":
-            if currentvozila <= total:
-                currentvozila = currentvozila + 1
+            if self.win.randombutton.get_active() == True:
+                currentvozila = randint(1, total)
                 loadquestion(str(currentvozila), part, self.win)
-            if currentvozila >= 2 and currentvozila <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currentvozila >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currentvozila <= total:
+                    currentvozila = currentvozila + 1
+                    loadquestion(str(currentvozila), part, self.win)
+                if currentvozila >= 2 and currentvozila <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currentvozila >= total:
+                    self.win.rightarrow.set_sensitive(False)
         elif part == "tuzv":
-            if currenttuzv <= total:
-                currenttuzv = currenttuzv + 1
+            if self.win.randombutton.get_active() == True:
+                currenttuzv = randint(1, total)
                 loadquestion(str(currenttuzv), part, self.win)
-            if currenttuzv >= 2 and currenttuzv <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currenttuzv >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currenttuzv <= total:
+                    currenttuzv = currenttuzv + 1
+                    loadquestion(str(currenttuzv), part, self.win)
+                if currenttuzv >= 2 and currenttuzv <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currenttuzv >= total:
+                    self.win.rightarrow.set_sensitive(False)
         elif part == "ptilv":
-            if currentptilv <= total:
-                currentptilv = currentptilv + 1
+            if self.win.randombutton.get_active() == True:
+                currentptilv = randint(1, total)
                 loadquestion(str(currentptilv), part, self.win)
-            if currentptilv >= 2 and currentptilv <= total:
-                self.win.leftarrow.set_sensitive(True)
-            if currentptilv >= total:
-                self.win.rightarrow.set_sensitive(False)
+            else:
+                if currentptilv <= total:
+                    currentptilv = currentptilv + 1
+                    loadquestion(str(currentptilv), part, self.win)
+                if currentptilv >= 2 and currentptilv <= total:
+                    self.win.leftarrow.set_sensitive(True)
+                if currentptilv >= total:
+                    self.win.rightarrow.set_sensitive(False)
 
         conn.close()
 
@@ -537,6 +607,7 @@ class Semafor(Gtk.Application):
     def categoryselect_callback(self, action, parameter):
         self.win.hb.props.title = "Семафор"
         self.win.arrowbox.hide()
+        self.win.randombutton.hide()
         if self.win.hb.props.subtitle == "Бирање области":
             self.win.remove(self.win.partwindow)
             self.win.add(self.win.selectionwindow)
@@ -659,6 +730,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Основе безбедности саобраћаја и појмови"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)
@@ -696,6 +768,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Посебне мере и овлашћења"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)
@@ -733,6 +806,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Последице непоштовања прописа"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)
@@ -770,6 +844,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Правила саобраћаја"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)
@@ -807,6 +882,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Саобраћајна сигнализација"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)
@@ -844,6 +920,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Возачи"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)
@@ -881,6 +958,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Дужности у случају саобраћајне незгоде"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)
@@ -918,6 +996,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Време управљања и одмори возача"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)
@@ -955,6 +1034,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Начин употребе тахографа"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)
@@ -992,6 +1072,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Возила"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)
@@ -1029,6 +1110,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Технички услови за возила"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)
@@ -1066,6 +1148,7 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         self.win.hb.props.subtitle = "Превоз терета и лица возилима"
         self.win.arrowbox.show()
+        self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
         self.win.rightarrow.set_sensitive(True)
         self.win.add(self.win.questionwindow)

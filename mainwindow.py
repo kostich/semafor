@@ -25,6 +25,11 @@ class MainWindow(Gtk.ApplicationWindow):
         image = Gtk.Image.new_from_gicon(icon, Gtk.IconSize.BUTTON)
         self.partbutton.add(image)
 
+        self.randombutton = self.hbbuilder.get_object("random")
+        icon = Gio.ThemedIcon(name="media-playlist-shuffle-symbolic.symbolic")
+        image = Gtk.Image.new_from_gicon(icon, Gtk.IconSize.BUTTON)
+        self.randombutton.add(image)
+
         self.menumodel = Gio.Menu()
         self.partbutton.set_menu_model(self.menumodel)
         self.menumodel.append("Основе безбедности саобраћаја и појмови", "app.obsip")

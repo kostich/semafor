@@ -20,6 +20,7 @@
             <property name="sensitive">False</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">Учитава претходно питање</property>
             <property name="relief">half</property>
             <property name="use_stock">True</property>
             <signal name="clicked" handler="on_leftarrow_clicked" swapped="no"/>
@@ -36,6 +37,7 @@
             <property name="sensitive">False</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">Учитава следеће питање</property>
             <property name="relief">half</property>
             <property name="use_stock">True</property>
             <signal name="clicked" handler="on_rightarrow_clicked" swapped="no"/>
@@ -50,10 +52,23 @@
       </object>
     </child>
     <child>
+      <object class="GtkToggleButton" id="random">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+        <property name="tooltip_text" translatable="yes">Уколико је притиснуто, програм ће учитавати питања насумично</property>
+        <signal name="toggled" handler="on_random_toggled" swapped="no"/>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+    <child>
       <object class="GtkMenuButton" id="menu">
         <property name="visible">True</property>
         <property name="can_focus">True</property>
         <property name="receives_default">True</property>
+        <property name="tooltip_text" translatable="yes">Приказује изборник за одабир области и за одабир изборника категорије</property>
         <child>
           <placeholder/>
         </child>
