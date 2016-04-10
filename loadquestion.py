@@ -18,7 +18,7 @@ def loadquestion(questionnum, part, window):
     question = question.replace('[(\'','')
     question = question.replace('\\n','\n')
     question = question.replace('\',)]','')
-    window.question.set_markup(question)
+    window.question.set_markup(questionnum + '. ' + question)
 
     # Uncheck all the answers and enable them
     window.answer1.set_active(False)
