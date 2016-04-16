@@ -312,6 +312,8 @@ class Semafor(Gtk.Application):
             self.categoryselect_action.set_enabled(False)
 
     def random_toggled(self, button):
+        global currentdussn, currentobsip, currentnut, currentpmio, currentpnp, currentps, currentptilv
+        global currentss, currenttuzv, currentvozaci, currentvozila, currentvuiov
         if self.win.randombutton.get_active():
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(True)
@@ -1294,7 +1296,7 @@ class Semafor(Gtk.Application):
             return
         elif self.win.hb.props.title == "Грешка":
             return
-        
+
         self.win.hb.props.subtitle = "Превоз терета и лица возилима"
         self.win.arrowbox.show()
         self.win.randombutton.show()
