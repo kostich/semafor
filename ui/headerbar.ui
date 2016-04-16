@@ -56,7 +56,7 @@
         <property name="visible">True</property>
         <property name="can_focus">True</property>
         <property name="receives_default">True</property>
-        <property name="tooltip_text" translatable="yes">Уколико је притиснуто, програм ће учитавати питања насумично</property>
+        <property name="tooltip_text" translatable="yes">Уколико је притиснуто, омогућава учитавање насумичних питања</property>
         <signal name="toggled" handler="on_random_toggled" swapped="no"/>
       </object>
       <packing>
