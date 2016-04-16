@@ -348,7 +348,11 @@ class Semafor(Gtk.Application):
             # also check if we are on the first or last question and set
             # the left and right arrow accordingly
             if self.win.randombutton.get_active() == True:
-                currentobsip = randint(1, total)
+                # we need to get a random number but that random numer shouldn't
+                # be the same as the current number in the variable
+                lastobsip = currentobsip
+                while currentobsip == lastobsip:
+                    currentobsip = randint(1, total)
                 loadquestion(str(currentobsip), part, self.win)
             else:
                 if currentobsip <= total:
@@ -360,7 +364,9 @@ class Semafor(Gtk.Application):
                     self.win.rightarrow.set_sensitive(False)
         elif part == "pmio":
             if self.win.randombutton.get_active() == True:
-                currentpmio = randint(1, total)
+                lastpmio = currentpmio
+                while currentpmio == lastpmio:
+                    currentpmio = randint(1, total)
                 loadquestion(str(currentpmio), part, self.win)
             else:
                 if currentpmio <= total:
@@ -372,7 +378,9 @@ class Semafor(Gtk.Application):
                     self.win.rightarrow.set_sensitive(False)
         elif part == "pnp":
             if self.win.randombutton.get_active() == True:
-                currentpnp = randint(1, total)
+                lastpnp = currentpnp
+                while currentpnp == lastpnp:
+                    currentpnp = randint(1, total)
                 loadquestion(str(currentpnp), part, self.win)
             else:
                 if currentpnp <= total:
@@ -384,7 +392,9 @@ class Semafor(Gtk.Application):
                     self.win.rightarrow.set_sensitive(False)
         elif part == "ps":
             if self.win.randombutton.get_active() == True:
-                currentps = randint(1, total)
+                lastps = currentps
+                while currentps == lastps:
+                    currentps = randint(1, total)
                 loadquestion(str(currentps), part, self.win)
             else:
                 if currentps <= total:
@@ -396,7 +406,9 @@ class Semafor(Gtk.Application):
                     self.win.rightarrow.set_sensitive(False)
         elif part == "ss":
             if self.win.randombutton.get_active() == True:
-                currentss = randint(1, total)
+                lastss = currentss
+                while currentss == lastss:
+                    currentss = randint(1, total)
                 loadquestion(str(currentss), part, self.win)
             else:
                 if currentss <= total:
@@ -408,7 +420,9 @@ class Semafor(Gtk.Application):
                     self.win.rightarrow.set_sensitive(False)
         elif part == "vozaci":
             if self.win.randombutton.get_active() == True:
-                currentvozaci = randint(1, total)
+                lastvozaci = currentvozaci
+                while currentvozaci == lastvozaci:
+                    currentvozaci = randint(1, total)
                 loadquestion(str(currentvozaci), part, self.win)
             else:
                 if currentvozaci <= total:
@@ -420,7 +434,9 @@ class Semafor(Gtk.Application):
                     self.win.rightarrow.set_sensitive(False)
         elif part == "dussn":
             if self.win.randombutton.get_active() == True:
-                currentdussn = randint(1, total)
+                lastdussn = currentdussn
+                while currentdussn == lastdussn:
+                    currentdussn = randint(1, total)
                 loadquestion(str(currentdussn), part, self.win)
             else:
                 if currentdussn <= total:
@@ -432,7 +448,9 @@ class Semafor(Gtk.Application):
                     self.win.rightarrow.set_sensitive(False)
         elif part == "vuiov":
             if self.win.randombutton.get_active() == True:
-                currentvuiov = randint(1, total)
+                lastvuiov = currentvuiov
+                while currentvuiov == lastvuiov:
+                    currentvuiov = randint(1, total)
                 loadquestion(str(currentvuiov), part, self.win)
             else:
                 if currentvuiov <= total:
@@ -444,7 +462,9 @@ class Semafor(Gtk.Application):
                     self.win.rightarrow.set_sensitive(False)
         elif part == "nut":
             if self.win.randombutton.get_active() == True:
-                currentnut = randint(1, total)
+                lastnut = currentnut
+                while currentnut == lastnut:
+                    currentnut = randint(1, total)
                 loadquestion(str(currentnut), part, self.win)
             else:
                 if currentnut <= total:
@@ -456,7 +476,9 @@ class Semafor(Gtk.Application):
                     self.win.rightarrow.set_sensitive(False)
         elif part == "vozila":
             if self.win.randombutton.get_active() == True:
-                currentvozila = randint(1, total)
+                lastvozila = currentvozila
+                while currentvozila == lastvozila:
+                    currentvozila = randint(1, total)
                 loadquestion(str(currentvozila), part, self.win)
             else:
                 if currentvozila <= total:
@@ -468,7 +490,9 @@ class Semafor(Gtk.Application):
                     self.win.rightarrow.set_sensitive(False)
         elif part == "tuzv":
             if self.win.randombutton.get_active() == True:
-                currenttuzv = randint(1, total)
+                lasttuzv = currenttuzv
+                while currenttuzv == lasttuzv:
+                    currenttuzv = randint(1, total)
                 loadquestion(str(currenttuzv), part, self.win)
             else:
                 if currenttuzv <= total:
@@ -480,7 +504,9 @@ class Semafor(Gtk.Application):
                     self.win.rightarrow.set_sensitive(False)
         elif part == "ptilv":
             if self.win.randombutton.get_active() == True:
-                currentptilv = randint(1, total)
+                lastptilv = currentptilv
+                while currentptilv == lastptilv:
+                    currentptilv = randint(1, total)
                 loadquestion(str(currentptilv), part, self.win)
             else:
                 if currentptilv <= total:
