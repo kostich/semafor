@@ -312,7 +312,7 @@ class Semafor(Gtk.Application):
             self.categoryselect_action.set_enabled(False)
 
     def random_toggled(self, button):
-        if self.win.randombutton.get_active() == True:
+        if self.win.randombutton.get_active():
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(True)
             self.win.rightarrow.set_tooltip_text("Учитава насумично питање")
@@ -349,7 +349,7 @@ class Semafor(Gtk.Application):
             # and then load the question.
             # also check if we are on the first or last question and set
             # the left and right arrow accordingly
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 # we need to get a random number but that random numer shouldn't
                 # be the same as the current number in the variable
                 lastobsip = currentobsip
@@ -365,7 +365,7 @@ class Semafor(Gtk.Application):
                 if currentobsip >= total:
                     self.win.rightarrow.set_sensitive(False)
         elif part == "pmio":
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 lastpmio = currentpmio
                 while currentpmio == lastpmio:
                     currentpmio = randint(1, total)
@@ -379,7 +379,7 @@ class Semafor(Gtk.Application):
                 if currentpmio >= total:
                     self.win.rightarrow.set_sensitive(False)
         elif part == "pnp":
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 lastpnp = currentpnp
                 while currentpnp == lastpnp:
                     currentpnp = randint(1, total)
@@ -393,7 +393,7 @@ class Semafor(Gtk.Application):
                 if currentpnp >= total:
                     self.win.rightarrow.set_sensitive(False)
         elif part == "ps":
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 lastps = currentps
                 while currentps == lastps:
                     currentps = randint(1, total)
@@ -407,7 +407,7 @@ class Semafor(Gtk.Application):
                 if currentps >= total:
                     self.win.rightarrow.set_sensitive(False)
         elif part == "ss":
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 lastss = currentss
                 while currentss == lastss:
                     currentss = randint(1, total)
@@ -421,7 +421,7 @@ class Semafor(Gtk.Application):
                 if currentss >= total:
                     self.win.rightarrow.set_sensitive(False)
         elif part == "vozaci":
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 lastvozaci = currentvozaci
                 while currentvozaci == lastvozaci:
                     currentvozaci = randint(1, total)
@@ -435,7 +435,7 @@ class Semafor(Gtk.Application):
                 if currentvozaci >= total:
                     self.win.rightarrow.set_sensitive(False)
         elif part == "dussn":
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 lastdussn = currentdussn
                 while currentdussn == lastdussn:
                     currentdussn = randint(1, total)
@@ -449,7 +449,7 @@ class Semafor(Gtk.Application):
                 if currentdussn >= total:
                     self.win.rightarrow.set_sensitive(False)
         elif part == "vuiov":
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 lastvuiov = currentvuiov
                 while currentvuiov == lastvuiov:
                     currentvuiov = randint(1, total)
@@ -463,7 +463,7 @@ class Semafor(Gtk.Application):
                 if currentvuiov >= total:
                     self.win.rightarrow.set_sensitive(False)
         elif part == "nut":
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 lastnut = currentnut
                 while currentnut == lastnut:
                     currentnut = randint(1, total)
@@ -477,7 +477,7 @@ class Semafor(Gtk.Application):
                 if currentnut >= total:
                     self.win.rightarrow.set_sensitive(False)
         elif part == "vozila":
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 lastvozila = currentvozila
                 while currentvozila == lastvozila:
                     currentvozila = randint(1, total)
@@ -491,7 +491,7 @@ class Semafor(Gtk.Application):
                 if currentvozila >= total:
                     self.win.rightarrow.set_sensitive(False)
         elif part == "tuzv":
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 lasttuzv = currenttuzv
                 while currenttuzv == lasttuzv:
                     currenttuzv = randint(1, total)
@@ -505,7 +505,7 @@ class Semafor(Gtk.Application):
                 if currenttuzv >= total:
                     self.win.rightarrow.set_sensitive(False)
         elif part == "ptilv":
-            if self.win.randombutton.get_active() == True:
+            if self.win.randombutton.get_active():
                 lastptilv = currentptilv
                 while currentptilv == lastptilv:
                     currentptilv = randint(1, total)
