@@ -315,6 +315,7 @@ class Semafor(Gtk.Application):
         if self.win.randombutton.get_active() == True:
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(True)
+            self.win.rightarrow.set_tooltip_text("Учитава насумично питање")
         else:
             currentps = 1
             currentss = 1
@@ -328,6 +329,7 @@ class Semafor(Gtk.Application):
             currentvuiov = 1
             currentvozaci = 1
             currentvozila = 1
+            self.win.rightarrow.set_tooltip_text("Учитава следеће питање")
 
     def nextquestion(self, button):
         global currentobsip, currentpmio, currentpnp, currentps, currentss
