@@ -756,6 +756,17 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
             self.win.remove(self.win.questionwindow)
+
+        # If we have no question database, print error and exit
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+
         self.win.hb.props.subtitle = "Основе безбедности саобраћаја и појмови"
         self.win.arrowbox.show()
         self.win.randombutton.show()
@@ -794,6 +805,16 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
             self.win.remove(self.win.questionwindow)
+
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+
         self.win.hb.props.subtitle = "Посебне мере и овлашћења"
         self.win.arrowbox.show()
         self.win.randombutton.show()
@@ -832,6 +853,16 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
             self.win.remove(self.win.questionwindow)
+
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+
         self.win.hb.props.subtitle = "Последице непоштовања прописа"
         self.win.arrowbox.show()
         self.win.randombutton.show()
@@ -870,6 +901,16 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
             self.win.remove(self.win.questionwindow)
+
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+
         self.win.hb.props.subtitle = "Правила саобраћаја"
         self.win.arrowbox.show()
         self.win.randombutton.show()
@@ -908,6 +949,16 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
             self.win.remove(self.win.questionwindow)
+
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+
         self.win.hb.props.subtitle = "Саобраћајна сигнализација"
         self.win.arrowbox.show()
         self.win.randombutton.show()
@@ -946,6 +997,16 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
             self.win.remove(self.win.questionwindow)
+
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+
         self.win.hb.props.subtitle = "Возачи"
         self.win.arrowbox.show()
         self.win.randombutton.show()
@@ -984,6 +1045,16 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
             self.win.remove(self.win.questionwindow)
+
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+
         self.win.hb.props.subtitle = "Дужности у случају саобраћајне незгоде"
         self.win.arrowbox.show()
         self.win.randombutton.show()
@@ -1022,6 +1093,16 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
             self.win.remove(self.win.questionwindow)
+
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+
         self.win.hb.props.subtitle = "Време управљања и одмори возача"
         self.win.arrowbox.show()
         self.win.randombutton.show()
@@ -1060,6 +1141,16 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
             self.win.remove(self.win.questionwindow)
+
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+
         self.win.hb.props.subtitle = "Начин употребе тахографа"
         self.win.arrowbox.show()
         self.win.randombutton.show()
@@ -1098,6 +1189,16 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
             self.win.remove(self.win.questionwindow)
+
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+
         self.win.hb.props.subtitle = "Возила"
         self.win.arrowbox.show()
         self.win.randombutton.show()
@@ -1136,6 +1237,16 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
             self.win.remove(self.win.questionwindow)
+
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+
         self.win.hb.props.subtitle = "Технички услови за возила"
         self.win.arrowbox.show()
         self.win.randombutton.show()
@@ -1174,6 +1285,16 @@ class Semafor(Gtk.Application):
             self.win.remove(self.win.questionwindow)
         elif self.win.hb.props.subtitle == "Технички услови за возила":
             self.win.remove(self.win.questionwindow)
+
+        if not os.path.isfile(programdir + '/data.db'):
+            self.win.hb.props.title = "Грешка"
+            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.add(self.win.nodbwindow)
+            self.menu_enabled(False)
+            return
+        elif self.win.hb.props.title == "Грешка":
+            return
+        
         self.win.hb.props.subtitle = "Превоз терета и лица возилима"
         self.win.arrowbox.show()
         self.win.randombutton.show()

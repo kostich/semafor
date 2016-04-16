@@ -61,10 +61,17 @@ class MainWindow(Gtk.ApplicationWindow):
         self.selectionwindow = self.selwinbuilder.get_object("categorybox1")
         self.add(self.selectionwindow)
 
-        # part selectin window with small string
+        # part selection window with small string
         partselectionwindow = Gtk.Builder()
         partselectionwindow.add_from_file(programdir + '/ui/partselection.ui')
         self.partwindow = partselectionwindow.get_object("partbox1")
+
+        # no database window
+        nodbselectionwindow = Gtk.Builder()
+        nodbselectionwindow.add_from_file(programdir + '/ui/nodb.ui')
+        self.nodbwindow = nodbselectionwindow.get_object("grid1")
+        self.nodbimage = nodbselectionwindow.get_object("imagenodb")
+        self.nodbimage.set_from_file(programdir + '/icon/no-db.png')
 
         # question window
         self.questionbuilder = Gtk.Builder()
