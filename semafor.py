@@ -12,12 +12,11 @@ from loadquestion import *
 from random import randint
 
 domain = 'semafor'
-gettextdir = 'locale'
-localedir = programdir + '/' + gettextdir
+localedir = programdir + '/locale'
 
 locale.setlocale(locale.LC_ALL, '')
 locale.bindtextdomain(domain, localedir)
-gettext.bindtextdomain(domain, gettextdir)
+gettext.bindtextdomain(domain, localedir)
 gettext.textdomain(domain)
 _ = gettext.gettext
 
