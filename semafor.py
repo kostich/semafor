@@ -1327,7 +1327,7 @@ class Semafor(Gtk.Application):
         dialog = Gtk.AboutDialog()
         dialog.set_default_size(430, 390)
         dialog.set_transient_for(self.win)
-        dialog.set_program_name('Semafor')
+        dialog.set_program_name(_('Semafor'))
         dialog.set_version('1.0')
         dialog.set_website('http://sourceforge.net/projects/semafor/')
         dialog.set_website_label(_('Semafor website.'))
