@@ -4,10 +4,22 @@ import signal
 import gi
 gi.require_version('Gtk', '3.0')
 import mainwindow
+import locale
+import gettext
 
 from gi.repository import Gtk, Gio
 from loadquestion import *
 from random import randint
+
+domain = 'semafor'
+gettextdir = 'locale'
+localedir = programdir + '/' + gettextdir
+
+locale.setlocale(locale.LC_ALL, '')
+locale.bindtextdomain(domain, localedir)
+gettext.bindtextdomain(domain, gettextdir)
+gettext.textdomain(domain)
+_ = gettext.gettext
 
 currentobsip = 0
 currentpmio = 0
@@ -31,9 +43,13 @@ class Semafor(Gtk.Application):
 
     def do_activate(self):
         self.win = mainwindow.MainWindow(self)
+        # Set the title and subtitle
+        self.win.hb.props.title = _('Semafor')
+        self.win.hb.props.subtitle = _('Category choosing')
         self.app = app
         # set appmenu
         builder = Gtk.Builder()
+        builder.set_translation_domain(domain)
         builder.add_from_file(programdir + '/ui/appmenu.ui')
         self.app.set_app_menu(builder.get_object("app-menu"))
 
@@ -147,136 +163,136 @@ class Semafor(Gtk.Application):
         if pressed == 0:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - AM"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - AM')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "am"
         elif pressed == 1:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - A1"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - A1')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "a1"
         elif pressed == 2:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - A2"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - A2')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "a2"
         elif pressed == 3:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - A"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - A')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "a"
         elif pressed == 4:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - B1"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - B1')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "b1"
         elif pressed == 5:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - B"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - B')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "b"
         elif pressed == 6:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - BE"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - BE')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "be"
         elif pressed == 7:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - C1"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - C1')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "c1"
         elif pressed == 8:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - C1E"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - C1E')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "c1e"
         elif pressed == 9:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - C"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - C')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "c"
         elif pressed == 10:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - CE"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - CE')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "ce"
         elif pressed == 11:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - D1"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - D1')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "d1"
         elif pressed == 12:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - D1E"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - D1E')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "d1e"
         elif pressed == 13:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - D"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - D')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "d"
         elif pressed == 14:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - DE"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - DE')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "de"
         elif pressed == 15:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - F"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - F')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "f"
         elif pressed == 16:
             self.win.remove(self.win.selectionwindow)
             self.win.add(self.win.partwindow)
-            self.win.hb.props.title = "Семафор - M"
-            self.win.hb.props.subtitle = "Бирање области"
+            self.win.hb.props.title = _('Semafor - M')
+            self.win.hb.props.subtitle = _('Area choosing')
             self.menu_enabled(True)
             self.win.set_focus(self.win.rightarrow)
             category = "m"
@@ -317,7 +333,7 @@ class Semafor(Gtk.Application):
         if self.win.randombutton.get_active():
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(True)
-            self.win.rightarrow.set_tooltip_text("Учитава насумично питање")
+            self.win.rightarrow.set_tooltip_text(_('Loads a random question'))
         else:
             currentps = 1
             currentss = 1
@@ -331,7 +347,7 @@ class Semafor(Gtk.Application):
             currentvuiov = 1
             currentvozaci = 1
             currentvozila = 1
-            self.win.rightarrow.set_tooltip_text("Учитава следеће питање")
+            self.win.rightarrow.set_tooltip_text(_('Loads the next question'))
 
     def nextquestion(self, button):
         global currentobsip, currentpmio, currentpnp, currentps, currentss
@@ -635,97 +651,97 @@ class Semafor(Gtk.Application):
         conn.close()
 
     def categoryselect_callback(self, action, parameter):
-        self.win.hb.props.title = "Семафор"
+        self.win.hb.props.title = _('Semafor')
         self.win.arrowbox.hide()
         self.win.randombutton.hide()
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
             self.win.add(self.win.selectionwindow)
-            self.win.hb.props.subtitle = "Бирање категорије"
+            self.win.hb.props.subtitle = _('Category choosing')
             self.menu_enabled(False)
             self.win.leftarrow.set_sensitive(False)
             self.win.rightarrow.set_sensitive(False)
@@ -734,42 +750,42 @@ class Semafor(Gtk.Application):
         global part, currentobsip
         part = "obsip"
         currentobsip = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
 
         # If we have no question database, print error and exit
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Основе безбедности саобраћаја и појмови"
+        self.win.hb.props.subtitle = _('The basics of the traffic safety and traffic terms')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -783,41 +799,41 @@ class Semafor(Gtk.Application):
         global part, currentpmio
         part = "pmio"
         currentpmio = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
 
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Посебне мере и овлашћења"
+        self.win.hb.props.subtitle = _('Special regulations and permissions')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -831,41 +847,41 @@ class Semafor(Gtk.Application):
         global part, currentpnp
         part = "pnp"
         currentpnp = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
 
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Последице непоштовања прописа"
+        self.win.hb.props.subtitle = _('The consequences of the violation of traffic rules')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -879,41 +895,41 @@ class Semafor(Gtk.Application):
         global part, currentps
         part = "ps"
         currentps = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
 
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Правила саобраћаја"
+        self.win.hb.props.subtitle = _('Traffic rules')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -927,41 +943,41 @@ class Semafor(Gtk.Application):
         global part, currentss
         part = "ss"
         currentss = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
 
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Саобраћајна сигнализација"
+        self.win.hb.props.subtitle = _('Traffic signals')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -975,41 +991,41 @@ class Semafor(Gtk.Application):
         global part, currentvozaci
         part = "vozaci"
         currentvozaci = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
 
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Возачи"
+        self.win.hb.props.subtitle = _('Drivers')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -1023,41 +1039,41 @@ class Semafor(Gtk.Application):
         global part, currentdussn
         part = "dussn"
         currentdussn = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
 
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Дужности у случају саобраћајне незгоде"
+        self.win.hb.props.subtitle = _('Duties in the case of the traffic accident')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -1071,41 +1087,41 @@ class Semafor(Gtk.Application):
         global part, currentvuiov
         part = "vuiov"
         currentvuiov = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
 
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Време управљања и одмори возача"
+        self.win.hb.props.subtitle = _('Driving period driver resting')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -1119,41 +1135,41 @@ class Semafor(Gtk.Application):
         global part, currentnut
         part = "nut"
         currentnut = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
 
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Начин употребе тахографа"
+        self.win.hb.props.subtitle = _('Tachograph usage')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -1167,41 +1183,41 @@ class Semafor(Gtk.Application):
         global part, currentvozila
         part = "vozila"
         currentvozila = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
 
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Возила"
+        self.win.hb.props.subtitle = _('Vehicles')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -1215,41 +1231,41 @@ class Semafor(Gtk.Application):
         global part, currenttuzv
         part = "tuzv"
         currenttuzv = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Превоз терета и лица возилима":
+        elif self.win.hb.props.subtitle == _('Cargo and passenger transport'):
             self.win.remove(self.win.questionwindow)
 
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Технички услови за возила"
+        self.win.hb.props.subtitle = _('Vehicle technical conditions')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -1263,41 +1279,41 @@ class Semafor(Gtk.Application):
         global part, currentptilv
         part = "ptilv"
         currentptilv = 1
-        if self.win.hb.props.subtitle == "Бирање области":
+        if self.win.hb.props.subtitle == _('Area choosing'):
             self.win.remove(self.win.partwindow)
-        elif self.win.hb.props.subtitle == "Основе безбедности саобраћаја и појмови":
+        elif self.win.hb.props.subtitle == _('The basics of the traffic safety and traffic terms'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Посебне мере и овлашћења":
+        elif self.win.hb.props.subtitle == _('Special regulations and permissions'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Последице непоштовања прописа":
+        elif self.win.hb.props.subtitle == _('The consequences of the violation of traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Правила саобраћаја":
+        elif self.win.hb.props.subtitle == _('Traffic rules'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Саобраћајна сигнализација":
+        elif self.win.hb.props.subtitle == _('Traffic signals'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возачи":
+        elif self.win.hb.props.subtitle == _('Drivers'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Дужности у случају саобраћајне незгоде":
+        elif self.win.hb.props.subtitle == _('Duties in the case of the traffic accident'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Начин употребе тахографа":
+        elif self.win.hb.props.subtitle == _('Tachograph usage'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Време управљања и одмори возача":
+        elif self.win.hb.props.subtitle == _('Driving period driver resting'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Возила":
+        elif self.win.hb.props.subtitle == _('Vehicles'):
             self.win.remove(self.win.questionwindow)
-        elif self.win.hb.props.subtitle == "Технички услови за возила":
+        elif self.win.hb.props.subtitle == _('Vehicle technical conditions'):
             self.win.remove(self.win.questionwindow)
 
         if not os.path.isfile(programdir + '/data.db'):
-            self.win.hb.props.title = "Грешка"
-            self.win.hb.props.subtitle = "Нема базе са питањима"
+            self.win.hb.props.title = _('Error')
+            self.win.hb.props.subtitle = _('No question database')
             self.win.add(self.win.nodbwindow)
             self.menu_enabled(False)
             return
-        elif self.win.hb.props.title == "Грешка":
+        elif self.win.hb.props.title == _('Error'):
             return
 
-        self.win.hb.props.subtitle = "Превоз терета и лица возилима"
+        self.win.hb.props.subtitle = _('Cargo and passenger transport')
         self.win.arrowbox.show()
         self.win.randombutton.show()
         self.win.leftarrow.set_sensitive(False)
@@ -1311,21 +1327,17 @@ class Semafor(Gtk.Application):
         dialog = Gtk.AboutDialog()
         dialog.set_default_size(430, 390)
         dialog.set_transient_for(self.win)
-        dialog.set_program_name('Семафор')
+        dialog.set_program_name('Semafor')
         dialog.set_version('1.0')
         dialog.set_website('http://sourceforge.net/projects/semafor/')
-        dialog.set_website_label("Веб страница Семафора.")
-        dialog.set_comments("Програм за обуку возача.")
-        dialog.set_translator_credits(('translator-credits'))
-        dialog.set_artists([
-            'Петар „mamuz” Милојевић <trenatre@mail.com>',
-        ])
-        dialog.set_authors([
-            'Марко М. Костић <marko.m.kostic@gmail.com>',
-        ])
+        dialog.set_website_label(_('Semafor website.'))
+        dialog.set_comments(_('Driving license application.'))
+        dialog.set_translator_credits('translator-credits')
+        dialog.set_artists([_('Petar "mamuz" Milojevic <trenatre@gmail.com>')])
+        dialog.set_authors([_('Marko M. Kostic <marko.m.kostic@gmail.com>')])
         dialog.set_license(license)
         dialog.set_wrap_license(True)
-        dialog.set_copyright("© 2011-2016 Марко М. Костић")
+        dialog.set_copyright(_('© 2011-2016 Marko M. Kostic'))
         image = Gtk.Image()
         image.set_from_file(programdir + '/icon/icon.png')
         pixbuf = image.get_pixbuf()

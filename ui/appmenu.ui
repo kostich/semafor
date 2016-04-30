@@ -5,13 +5,13 @@
   <menu id='app-menu'>
     <section>
       <item>
-        <attribute name='label' translatable='yes'>_О програму</attribute>
+        <attribute name='label' translatable='yes'>_About</attribute>
         <attribute name='action'>app.about</attribute>
       </item>
     </section>
     <section>
       <item>
-        <attribute name='label' translatable='yes'>_Изађи</attribute>
+        <attribute name='label' translatable='yes'>_Quit</attribute>
         <attribute name='action'>app.quit</attribute>
         <attribute name='accel'>&lt;Primary&gt;i</attribute>
       </item>

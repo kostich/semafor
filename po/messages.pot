@@ -1,0 +1,489 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-30 21:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mainwindow.py:24 mainwindow.py:59 semafor.py:48 semafor.py:660
+#: semafor.py:667 semafor.py:674 semafor.py:681 semafor.py:688 semafor.py:695
+#: semafor.py:702 semafor.py:709 semafor.py:716 semafor.py:723 semafor.py:730
+#: semafor.py:737 semafor.py:744
+msgid "Category choosing"
+msgstr ""
+
+#: mainwindow.py:27 semafor.py:47 semafor.py:654
+msgid "Semafor"
+msgstr ""
+
+#: mainwindow.py:47 semafor.py:664 semafor.py:788 semafor.py:804 semafor.py:852
+#: semafor.py:900 semafor.py:948 semafor.py:996 semafor.py:1044 semafor.py:1092
+#: semafor.py:1140 semafor.py:1188 semafor.py:1236 semafor.py:1284
+msgid "The basics of the traffic safety and traffic terms"
+msgstr ""
+
+#: mainwindow.py:48 semafor.py:671 semafor.py:755 semafor.py:836 semafor.py:854
+#: semafor.py:902 semafor.py:950 semafor.py:998 semafor.py:1046 semafor.py:1094
+#: semafor.py:1142 semafor.py:1190 semafor.py:1238 semafor.py:1286
+msgid "Special regulations and permissions"
+msgstr ""
+
+#: mainwindow.py:49 semafor.py:678 semafor.py:757 semafor.py:806 semafor.py:884
+#: semafor.py:904 semafor.py:952 semafor.py:1000 semafor.py:1048
+#: semafor.py:1096 semafor.py:1144 semafor.py:1192 semafor.py:1240
+#: semafor.py:1288
+msgid "The consequences of the violation of traffic rules"
+msgstr ""
+
+#: mainwindow.py:50 semafor.py:685 semafor.py:759 semafor.py:808 semafor.py:856
+#: semafor.py:932 semafor.py:954 semafor.py:1002 semafor.py:1050
+#: semafor.py:1098 semafor.py:1146 semafor.py:1194 semafor.py:1242
+#: semafor.py:1290
+msgid "Traffic rules"
+msgstr ""
+
+#: mainwindow.py:51 semafor.py:692 semafor.py:761 semafor.py:810 semafor.py:858
+#: semafor.py:906 semafor.py:980 semafor.py:1004 semafor.py:1052
+#: semafor.py:1100 semafor.py:1148 semafor.py:1196 semafor.py:1244
+#: semafor.py:1292
+msgid "Traffic signals"
+msgstr ""
+
+#: mainwindow.py:52 semafor.py:699 semafor.py:763 semafor.py:812 semafor.py:860
+#: semafor.py:908 semafor.py:956 semafor.py:1028 semafor.py:1054
+#: semafor.py:1102 semafor.py:1150 semafor.py:1198 semafor.py:1246
+#: semafor.py:1294
+msgid "Drivers"
+msgstr ""
+
+#: mainwindow.py:53 semafor.py:706 semafor.py:765 semafor.py:814 semafor.py:862
+#: semafor.py:910 semafor.py:958 semafor.py:1006 semafor.py:1076
+#: semafor.py:1112 semafor.py:1152 semafor.py:1200 semafor.py:1248
+#: semafor.py:1296
+msgid "Duties in the case of the traffic accident"
+msgstr ""
+
+#: mainwindow.py:54 semafor.py:713 semafor.py:769 semafor.py:818 semafor.py:866
+#: semafor.py:914 semafor.py:962 semafor.py:1010 semafor.py:1058
+#: semafor.py:1124 semafor.py:1154 semafor.py:1204 semafor.py:1252
+#: semafor.py:1300
+msgid "Driving period driver resting"
+msgstr ""
+
+#: mainwindow.py:55 semafor.py:720 semafor.py:767 semafor.py:816 semafor.py:864
+#: semafor.py:912 semafor.py:960 semafor.py:1008 semafor.py:1056
+#: semafor.py:1104 semafor.py:1172 semafor.py:1202 semafor.py:1250
+#: semafor.py:1298
+msgid "Tachograph usage"
+msgstr ""
+
+#: mainwindow.py:56 semafor.py:727 semafor.py:771 semafor.py:820 semafor.py:868
+#: semafor.py:916 semafor.py:964 semafor.py:1012 semafor.py:1060
+#: semafor.py:1106 semafor.py:1156 semafor.py:1220 semafor.py:1254
+#: semafor.py:1302
+msgid "Vehicles"
+msgstr ""
+
+#: mainwindow.py:57 semafor.py:734 semafor.py:773 semafor.py:822 semafor.py:870
+#: semafor.py:918 semafor.py:966 semafor.py:1014 semafor.py:1062
+#: semafor.py:1108 semafor.py:1158 semafor.py:1206 semafor.py:1268
+#: semafor.py:1304
+msgid "Vehicle technical conditions"
+msgstr ""
+
+#: mainwindow.py:58 semafor.py:741 semafor.py:775 semafor.py:824 semafor.py:872
+#: semafor.py:920 semafor.py:968 semafor.py:1016 semafor.py:1064
+#: semafor.py:1110 semafor.py:1160 semafor.py:1208 semafor.py:1256
+#: semafor.py:1316
+msgid "Cargo and passenger transport"
+msgstr ""
+
+#: semafor.py:166
+msgid "Semafor - AM"
+msgstr ""
+
+#: semafor.py:167 semafor.py:175 semafor.py:183 semafor.py:191 semafor.py:199
+#: semafor.py:207 semafor.py:215 semafor.py:223 semafor.py:231 semafor.py:239
+#: semafor.py:247 semafor.py:255 semafor.py:263 semafor.py:271 semafor.py:279
+#: semafor.py:287 semafor.py:295 semafor.py:657 semafor.py:753 semafor.py:802
+#: semafor.py:850 semafor.py:898 semafor.py:946 semafor.py:994 semafor.py:1042
+#: semafor.py:1090 semafor.py:1138 semafor.py:1186 semafor.py:1234
+#: semafor.py:1282
+msgid "Area choosing"
+msgstr ""
+
+#: semafor.py:174
+msgid "Semafor - A1"
+msgstr ""
+
+#: semafor.py:182
+msgid "Semafor - A2"
+msgstr ""
+
+#: semafor.py:190
+msgid "Semafor - A"
+msgstr ""
+
+#: semafor.py:198
+msgid "Semafor - B1"
+msgstr ""
+
+#: semafor.py:206
+msgid "Semafor - B"
+msgstr ""
+
+#: semafor.py:214
+msgid "Semafor - BE"
+msgstr ""
+
+#: semafor.py:222
+msgid "Semafor - C1"
+msgstr ""
+
+#: semafor.py:230
+msgid "Semafor - C1E"
+msgstr ""
+
+#: semafor.py:238
+msgid "Semafor - C"
+msgstr ""
+
+#: semafor.py:246
+msgid "Semafor - CE"
+msgstr ""
+
+#: semafor.py:254
+msgid "Semafor - D1"
+msgstr ""
+
+#: semafor.py:262
+msgid "Semafor - D1E"
+msgstr ""
+
+#: semafor.py:270
+msgid "Semafor - D"
+msgstr ""
+
+#: semafor.py:278
+msgid "Semafor - DE"
+msgstr ""
+
+#: semafor.py:286
+msgid "Semafor - F"
+msgstr ""
+
+#: semafor.py:294
+msgid "Semafor - M"
+msgstr ""
+
+#: semafor.py:336
+msgid "Loads a random question"
+msgstr ""
+
+#: semafor.py:350 headerbar.ui:40
+msgid "Loads the next question"
+msgstr ""
+
+#: semafor.py:780 semafor.py:785 semafor.py:828 semafor.py:833 semafor.py:876
+#: semafor.py:881 semafor.py:924 semafor.py:929 semafor.py:972 semafor.py:977
+#: semafor.py:1020 semafor.py:1025 semafor.py:1068 semafor.py:1073
+#: semafor.py:1116 semafor.py:1121 semafor.py:1164 semafor.py:1169
+#: semafor.py:1212 semafor.py:1217 semafor.py:1260 semafor.py:1265
+#: semafor.py:1308 semafor.py:1313
+msgid "Error"
+msgstr ""
+
+#: semafor.py:781 semafor.py:829 semafor.py:877 semafor.py:925 semafor.py:973
+#: semafor.py:1021 semafor.py:1069 semafor.py:1117 semafor.py:1165
+#: semafor.py:1213 semafor.py:1261 semafor.py:1309
+msgid "No question database"
+msgstr ""
+
+#: semafor.py:1333
+msgid "Semafor website."
+msgstr ""
+
+#: semafor.py:1334
+msgid "Driving license application."
+msgstr ""
+
+#: semafor.py:1336
+msgid "Petar \"mamuz\" Milojevic <trenatre@gmail.com>"
+msgstr ""
+
+#: semafor.py:1337
+msgid "Marko M. Kostic <marko.m.kostic@gmail.com>"
+msgstr ""
+
+#: semafor.py:1340
+msgid "© 2011-2016 Marko M. Kostic"
+msgstr ""
+
+#: nodb.ui:48
+msgid ""
+"<span color=\"#828687\">File \"data.db\" which contains the questions can't "
+"be found. For you to continue testing your knowledge, you need to paste this "
+"database in the folder where this program is located and then restart this "
+"program.</span>"
+msgstr ""
+
+#: nodb.ui:35
+msgid ""
+"<span size=\"large\" color=\"#828687\"><b>Question database not found</b></"
+"span>"
+msgstr ""
+
+#: categoryselection.ui:197
+msgid "Category \"A\""
+msgstr ""
+
+#: categoryselection.ui:115
+msgid "Category \"A1\""
+msgstr ""
+
+#: categoryselection.ui:156
+msgid "Category \"A2\""
+msgstr ""
+
+#: categoryselection.ui:74
+msgid "Category \"AM\""
+msgstr ""
+
+#: categoryselection.ui:279
+msgid "Category \"B\""
+msgstr ""
+
+#: categoryselection.ui:238
+msgid "Category \"B1\""
+msgstr ""
+
+#: categoryselection.ui:320
+msgid "Category \"BE\""
+msgstr ""
+
+#: categoryselection.ui:443
+msgid "Category \"C\""
+msgstr ""
+
+#: categoryselection.ui:361
+msgid "Category \"C1\""
+msgstr ""
+
+#: categoryselection.ui:402
+msgid "Category \"C1E\""
+msgstr ""
+
+#: categoryselection.ui:484
+msgid "Category \"CE\""
+msgstr ""
+
+#: categoryselection.ui:607
+msgid "Category \"D\""
+msgstr ""
+
+#: categoryselection.ui:525
+msgid "Category \"D1\""
+msgstr ""
+
+#: categoryselection.ui:566
+msgid "Category \"D1E\""
+msgstr ""
+
+#: categoryselection.ui:648
+msgid "Category \"DE\""
+msgstr ""
+
+#: categoryselection.ui:689
+msgid "Category \"F\""
+msgstr ""
+
+#: categoryselection.ui:730
+msgid "Category \"M\""
+msgstr ""
+
+#: categoryselection.ui:18
+msgid "Choose the category"
+msgstr ""
+
+#: categoryselection.ui:297
+msgid ""
+"Collection of vehicles which the towing vehicle belongs to category \"B\", "
+"the maximum permissible weight of the trailer is greater than 750 kg but not "
+"greater than 3500 kg. From the age of 18."
+msgstr ""
+
+#: categoryselection.ui:379
+msgid ""
+"Collection of vehicles which the towing vehicle belongs to category \"C1\", "
+"and the maximum mass of the trailer exceeds 750 kg and the maximum "
+"authorized mass of the combination does not exceed 12000 kg, and a set of "
+"vehicles whose towing vehicle belongs to category \"B\", and the maximum "
+"permissible weight of the terminal vehicle exceeds 3,500 kg and the maximum "
+"authorized mass of the combination does not exceed 12,000 kg. From the age "
+"of 18."
+msgstr ""
+
+#: categoryselection.ui:461
+msgid ""
+"Collection vehicle which the towing vehicle belongs to category \"C\", a "
+"maximum permitted weight of the trailer is greater than 750 kg. From 21 "
+"years of age."
+msgstr ""
+
+#: categoryselection.ui:625
+msgid ""
+"Collection vehicle which the towing vehicle belongs to category \"D \", a "
+"maximum permitted weight of the trailer is greater than 750 kg. From 24 "
+"years of age."
+msgstr ""
+
+#: categoryselection.ui:543
+msgid ""
+"Collection vehicle which the towing vehicle belongs to category \"D1\" and "
+"the maximum mass of the trailer is greater than 750 kg. From 21 years of age."
+msgstr ""
+
+#: categoryselection.ui:215
+msgid "Heavy quadricycles. From 18 years of age."
+msgstr ""
+
+#: headerbar.ui:23
+msgid "Loads the previous question"
+msgstr ""
+
+#: categoryselection.ui:49
+msgid "Mopeds, light tricycles and quadricycles. From 16 year old."
+msgstr ""
+
+#: categoryselection.ui:707
+msgid "Motokultivator. From 15 years of age."
+msgstr ""
+
+#: categoryselection.ui:502
+msgid ""
+"Motor vehicles for the transport of persons, which in addition to the "
+"driver's seat have more than eight and a maximum of 16 seats and whose "
+"maximum length not exceeding eight meters. From 21 years of age."
+msgstr ""
+
+#: categoryselection.ui:584
+msgid ""
+"Motor vehicles for the transport of persons, which in addition to the "
+"driver's seat have more than eight seats. From 24 years of age."
+msgstr ""
+
+#: categoryselection.ui:256
+msgid ""
+"Motor vehicles, except vehicles of category \"A\", \"A1\", \"A2\", \"AM\", "
+"\"F\" and \"M\", which allowed mass does not exceed 3500 kg, and which have "
+"no more than eight seats excluding the driver's seat . From the age of 18."
+msgstr ""
+
+#: categoryselection.ui:338
+msgid ""
+"Motor vehicles, except vehicles of category \"A\", \"A1\", \"A2\", \"AM\", "
+"\"F\", \"M\", \"B\", \"D\" and \"D1\", whose biggest mass allowed is over "
+"3500 kg and does not exceed 7500 kg. From the age of 18."
+msgstr ""
+
+#: categoryselection.ui:420
+msgid ""
+"Motor vehicles, except vehicles of category \"A\", \"A1\", \"A2\", \"AM\", "
+"\"F\", \"M\", \"B\", \"D\" and \"D1\", whose maximum mass greater than 3,500 "
+"kg. From 21 years of age."
+msgstr ""
+
+#: categoryselection.ui:174
+msgid ""
+"Motorcycles and heavy tricycles whose engine power exceeds 35 kW. From 20 to "
+"24 years of age."
+msgstr ""
+
+#: categoryselection.ui:92
+msgid ""
+"Motorcycles volume to 125 ㎤ and engine power up to 11 kW, with the ratio of "
+"engine power and vehicle mass not exceeding 0.1 kW / kg and heavy tricycles "
+"engine power up to 15 kW. From 16 years of age."
+msgstr ""
+
+#: categoryselection.ui:133
+msgid ""
+"Motorcycles whose engine power does not exceed 35 kW and whose ratio of the "
+"engine power and vehicle mass not exceeding 0.2 kW / kg. From the age of 18."
+msgstr ""
+
+#: headerbar.ui:71
+msgid ""
+"Shows the menu for choosing the area and for choosing the option to display "
+"the category chooser"
+msgstr ""
+
+#: categoryselection.ui:666
+msgid ""
+"Tractors with or without auxiliary vehicles and working machines. From 16 "
+"years of age."
+msgstr ""
+
+#: headerbar.ui:59
+msgid "When pressed, enables the loading of random questions"
+msgstr ""
+
+#: partselection.ui:27
+msgid ""
+"You can now choose the area you want to practice.\n"
+"You can do that by clicking on the menu located near\n"
+"the x button which is used to exit the program."
+msgstr ""
+
+#: appmenu.ui:8
+msgid "_About"
+msgstr ""
+
+#: appmenu.ui:14
+msgid "_Quit"
+msgstr ""
+
+#: questionwindow.ui:224 questionwindow.ui:248 questionwindow.ui:272
+#: questionwindow.ui:296 questionwindow.ui:320 questionwindow.ui:344
+msgid "label"
+msgstr ""
+
+#: questionwindow.ui:25
+msgid "question"
+msgstr ""
+
+#: questionwindow.ui:50
+msgid "solution11"
+msgstr ""
+
+#: questionwindow.ui:65
+msgid "solution12"
+msgstr ""
+
+#: questionwindow.ui:177
+msgid "solution13"
+msgstr ""
+
+#: questionwindow.ui:131
+msgid "solution21"
+msgstr ""
+
+#: questionwindow.ui:78
+msgid "solution22"
+msgstr ""
+
+#: questionwindow.ui:189
+msgid "solution23"
+msgstr ""

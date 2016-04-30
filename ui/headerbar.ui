@@ -5,8 +5,8 @@
   <object class="GtkHeaderBar" id="programheaderbar">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="title">Семафор</property>
-    <property name="subtitle">Бирање категорије</property>
+    <property name="title">Title</property>
+    <property name="subtitle">Subtitle</property>
     <property name="show_close_button">True</property>
     <child>
       <object class="GtkBox" id="arrowbox">
@@ -20,7 +20,7 @@
             <property name="sensitive">False</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
-            <property name="tooltip_text" translatable="yes">Учитава претходно питање</property>
+            <property name="tooltip_text" translatable="yes">Loads the previous question</property>
             <property name="relief">half</property>
             <property name="use_stock">True</property>
             <signal name="clicked" handler="on_leftarrow_clicked" swapped="no"/>
@@ -37,7 +37,7 @@
             <property name="sensitive">False</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
-            <property name="tooltip_text" translatable="yes">Учитава следеће питање</property>
+            <property name="tooltip_text" translatable="yes">Loads the next question</property>
             <property name="relief">half</property>
             <property name="use_stock">True</property>
             <signal name="clicked" handler="on_rightarrow_clicked" swapped="no"/>
@@ -56,7 +56,7 @@
         <property name="visible">True</property>
         <property name="can_focus">True</property>
         <property name="receives_default">True</property>
-        <property name="tooltip_text" translatable="yes">Уколико је притиснуто, омогућава учитавање насумичних питања</property>
+        <property name="tooltip_text" translatable="yes">When pressed, enables the loading of random questions</property>
         <signal name="toggled" handler="on_random_toggled" swapped="no"/>
       </object>
       <packing>
@@ -68,7 +68,7 @@
         <property name="visible">True</property>
         <property name="can_focus">True</property>
         <property name="receives_default">True</property>
-        <property name="tooltip_text" translatable="yes">Приказује изборник за одабир области и за одабир изборника категорије</property>
+        <property name="tooltip_text" translatable="yes">Shows the menu for choosing the area and for choosing the option to display the category chooser</property>
         <child>
           <placeholder/>
         </child>

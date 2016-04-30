@@ -15,7 +15,7 @@
         <property name="can_focus">False</property>
         <property name="margin_top">10</property>
         <property name="margin_bottom">10</property>
-        <property name="label" translatable="yes">Изаберите категорију</property>
+        <property name="label" translatable="yes">Choose the category</property>
       </object>
       <packing>
         <property name="expand">False</property>
@@ -46,7 +46,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="tooltip_text" translatable="yes">Мопеди, лаки трицикли и лаки четвороцикли. Од 16 година старости.</property>
+                    <property name="tooltip_text" translatable="yes">Mopeds, light tricycles and quadricycles. From 16 year old.</property>
                     <child>
                       <object class="GtkBox" id="box1">
                         <property name="visible">True</property>
@@ -71,7 +71,7 @@
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">center</property>
-                            <property name="label" translatable="yes">Категорија "AM"</property>
+                            <property name="label" translatable="yes">Category "AM"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -89,7 +89,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="tooltip_text" translatable="yes">Мотоцикли запремине до 125 ㎤ и снаге мотора до 11 kW, чији однос снаге мотора и масе возила није већи од 0,1 kW/kg и тешки трицикли снаге мотора до 15 kW. Од 16 година старости.</property>
+                    <property name="tooltip_text" translatable="yes">Motorcycles volume to 125 ㎤ and engine power up to 11 kW, with the ratio of engine power and vehicle mass not exceeding 0.1 kW / kg and heavy tricycles engine power up to 15 kW. From 16 years of age.</property>
                     <child>
                       <object class="GtkBox" id="box2">
                         <property name="visible">True</property>
@@ -112,7 +112,7 @@
                           <object class="GtkLabel" id="label3">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "A1"</property>
+                            <property name="label" translatable="yes">Category "A1"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -130,7 +130,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="tooltip_text" translatable="yes">Мотоцикли чија снага мотора није већа од 35 kW и чији однос снаге мотора и масе возила није већи од 0,2 kW/kg. Од 18 година старости.</property>
+                    <property name="tooltip_text" translatable="yes">Motorcycles whose engine power does not exceed 35 kW and whose ratio of the engine power and vehicle mass not exceeding 0.2 kW / kg. From the age of 18.</property>
                     <child>
                       <object class="GtkBox" id="box3">
                         <property name="visible">True</property>
@@ -153,7 +153,7 @@
                           <object class="GtkLabel" id="label4">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "A2"</property>
+                            <property name="label" translatable="yes">Category "A2"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -171,7 +171,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="tooltip_text" translatable="yes">Мотоцикли и тешки трицикли чија снага мотора прелази 35 kW. Од 20 до 24 година старости.</property>
+                    <property name="tooltip_text" translatable="yes">Motorcycles and heavy tricycles whose engine power exceeds 35 kW. From 20 to 24 years of age.</property>
                     <child>
                       <object class="GtkBox" id="box4">
                         <property name="visible">True</property>
@@ -194,7 +194,7 @@
                           <object class="GtkLabel" id="label5">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "A"</property>
+                            <property name="label" translatable="yes">Category "A"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -212,7 +212,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="tooltip_text" translatable="yes">Тешки четвороцикли. Од 18 година старости.</property>
+                    <property name="tooltip_text" translatable="yes">Heavy quadricycles. From 18 years of age.</property>
                     <child>
                       <object class="GtkBox" id="box5">
                         <property name="visible">True</property>
@@ -235,7 +235,7 @@
                           <object class="GtkLabel" id="label6">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "B1"</property>
+                            <property name="label" translatable="yes">Category "B1"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -253,7 +253,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="tooltip_text" translatable="yes">Моторна возила, осим возила категорије "A", "A1", "A2", "AM", "F" и "M", чија дозвољена маса није већа од 3500 kg и која немају више од осам седишта не рачунајући седиште за возача. Од 18 година старости.</property>
+                    <property name="tooltip_text" translatable="yes">Motor vehicles, except vehicles of category "A", "A1", "A2", "AM", "F" and "M", which allowed mass does not exceed 3500 kg, and which have no more than eight seats excluding the driver's seat . From the age of 18.</property>
                     <child>
                       <object class="GtkBox" id="box6">
                         <property name="visible">True</property>
@@ -276,7 +276,7 @@
                           <object class="GtkLabel" id="label7">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "B"</property>
+                            <property name="label" translatable="yes">Category "B"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -294,7 +294,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="tooltip_text" translatable="yes">Скуп возила чије вучно возило припада категорији "B", највећа дозвољена маса прикључног возила је већа од 750 kg, а није већа од 3500 kg. Од 18 година старости.</property>
+                    <property name="tooltip_text" translatable="yes">Collection of vehicles which the towing vehicle belongs to category "B", the maximum permissible weight of the trailer is greater than 750 kg but not greater than 3500 kg. From the age of 18.</property>
                     <child>
                       <object class="GtkBox" id="box7">
                         <property name="visible">True</property>
@@ -317,7 +317,7 @@
                           <object class="GtkLabel" id="label8">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "BE"</property>
+                            <property name="label" translatable="yes">Category "BE"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -335,7 +335,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="tooltip_text" translatable="yes">Моторна возила, осим возила категорије "A", "A1", "A2", "AM", "F", "M", "B", "D", и "D1", чија је највећа дозвољена маса већа од 3500 kg, а није већа од 7500 kg. Од 18 година старости.</property>
+                    <property name="tooltip_text" translatable="yes">Motor vehicles, except vehicles of category "A", "A1", "A2", "AM", "F", "M", "B", "D" and "D1", whose biggest mass allowed is over 3500 kg and does not exceed 7500 kg. From the age of 18.</property>
                     <child>
                       <object class="GtkBox" id="box8">
                         <property name="visible">True</property>
@@ -358,7 +358,7 @@
                           <object class="GtkLabel" id="label9">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "C1"</property>
+                            <property name="label" translatable="yes">Category "C1"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -376,7 +376,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="tooltip_text" translatable="yes">Скуп возила чије вучно возило спада у категорију "C1", а највећа дозвољена маса прикључног возила прелази 750 kg и највећа дозвољена маса скупа не прелази 12.000 kg, као и скуп возила чије вучно возило спада у категорију "B", а највећа дозвољена маса прикључног возила прелази 3.500 kg и највећа дозвољена маса скупа возила не прелази 12.000 kg. Од 18 година старости.</property>
+                    <property name="tooltip_text" translatable="yes">Collection of vehicles which the towing vehicle belongs to category "C1", and the maximum mass of the trailer exceeds 750 kg and the maximum authorized mass of the combination does not exceed 12000 kg, and a set of vehicles whose towing vehicle belongs to category "B", and the maximum permissible weight of the terminal vehicle exceeds 3,500 kg and the maximum authorized mass of the combination does not exceed 12,000 kg. From the age of 18.</property>
                     <child>
                       <object class="GtkBox" id="box9">
                         <property name="visible">True</property>
@@ -399,7 +399,7 @@
                           <object class="GtkLabel" id="label10">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "C1E"</property>
+                            <property name="label" translatable="yes">Category "C1E"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -417,7 +417,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="tooltip_text" translatable="yes">Моторна возила, осим возила категорије "A", "A1", "A2", "AM", "F", "M", "B", "D" и "D1", чија је највећа дозвољена маса већа од 3.500 kg. Од 21 године старости.</property>
+                    <property name="tooltip_text" translatable="yes">Motor vehicles, except vehicles of category "A", "A1", "A2", "AM", "F", "M", "B", "D" and "D1", whose maximum mass greater than 3,500 kg. From 21 years of age.</property>
                     <child>
                       <object class="GtkBox" id="box10">
                         <property name="visible">True</property>
@@ -440,7 +440,7 @@
                           <object class="GtkLabel" id="label11">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "C"</property>
+                            <property name="label" translatable="yes">Category "C"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -458,6 +458,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_text" translatable="yes">Collection vehicle which the towing vehicle belongs to category "C", a maximum permitted weight of the trailer is greater than 750 kg. From 21 years of age.</property>
                     <child>
                       <object class="GtkBox" id="box12">
                         <property name="visible">True</property>
@@ -480,7 +481,7 @@
                           <object class="GtkLabel" id="label13">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "CE"</property>
+                            <property name="label" translatable="yes">Category "CE"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -498,6 +499,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_text" translatable="yes">Motor vehicles for the transport of persons, which in addition to the driver's seat have more than eight and a maximum of 16 seats and whose maximum length not exceeding eight meters. From 21 years of age.</property>
                     <child>
                       <object class="GtkBox" id="box11">
                         <property name="visible">True</property>
@@ -520,7 +522,7 @@
                           <object class="GtkLabel" id="label12">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "D1"</property>
+                            <property name="label" translatable="yes">Category "D1"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -538,6 +540,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_text" translatable="yes">Collection vehicle which the towing vehicle belongs to category "D1" and the maximum mass of the trailer is greater than 750 kg. From 21 years of age.</property>
                     <child>
                       <object class="GtkBox" id="box14">
                         <property name="visible">True</property>
@@ -560,7 +563,7 @@
                           <object class="GtkLabel" id="label15">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "D1E"</property>
+                            <property name="label" translatable="yes">Category "D1E"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -578,6 +581,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_text" translatable="yes">Motor vehicles for the transport of persons, which in addition to the driver's seat have more than eight seats. From 24 years of age.</property>
                     <child>
                       <object class="GtkBox" id="box13">
                         <property name="visible">True</property>
@@ -600,7 +604,7 @@
                           <object class="GtkLabel" id="label14">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "D"</property>
+                            <property name="label" translatable="yes">Category "D"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -618,6 +622,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_text" translatable="yes">Collection vehicle which the towing vehicle belongs to category "D ", a maximum permitted weight of the trailer is greater than 750 kg. From 24 years of age.</property>
                     <child>
                       <object class="GtkBox" id="box15">
                         <property name="visible">True</property>
@@ -640,7 +645,7 @@
                           <object class="GtkLabel" id="label16">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "DE"</property>
+                            <property name="label" translatable="yes">Category "DE"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -658,6 +663,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_text" translatable="yes">Tractors with or without auxiliary vehicles and working machines. From 16 years of age.</property>
                     <child>
                       <object class="GtkBox" id="box16">
                         <property name="visible">True</property>
@@ -680,7 +686,7 @@
                           <object class="GtkLabel" id="label17">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "F"</property>
+                            <property name="label" translatable="yes">Category "F"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -698,6 +704,7 @@
                     <property name="height_request">80</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_text" translatable="yes">Motokultivator. From 15 years of age.</property>
                     <child>
                       <object class="GtkBox" id="box17">
                         <property name="visible">True</property>
@@ -720,7 +727,7 @@
                           <object class="GtkLabel" id="label18">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Категорија "M"</property>
+                            <property name="label" translatable="yes">Category "M"</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>

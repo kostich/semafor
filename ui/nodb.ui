@@ -32,7 +32,7 @@
           <object class="GtkLabel" id="label1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">&lt;span size="large" color="#828687"&gt;&lt;b&gt;База са питањима није пронађена&lt;/b&gt;&lt;/span&gt;</property>
+            <property name="label" translatable="yes">&lt;span size="large" color="#828687"&gt;&lt;b&gt;Question database not found&lt;/b&gt;&lt;/span&gt;</property>
             <property name="use_markup">True</property>
           </object>
           <packing>
@@ -45,7 +45,7 @@
           <object class="GtkLabel" id="label2">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">&lt;span color="#828687"&gt;Датотека "data.db" која садржи питања није пронађена. Да бисте могли да тестирате ваше знање, потребно је да ову базу убаците у фасциклу где се налази овај програм и да поново покрените програм.&lt;/span&gt;</property>
+            <property name="label" translatable="yes">&lt;span color="#828687"&gt;File "data.db" which contains the questions can't be found. For you to continue testing your knowledge, you need to paste this database in the folder where this program is located and then restart this program.&lt;/span&gt;</property>
             <property name="use_markup">True</property>
             <property name="wrap">True</property>
             <property name="wrap_mode">word-char</property>
