@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-30 21:30+0200\n"
+"POT-Creation-Date: 2016-04-30 23:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,93 +17,93 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: mainwindow.py:24 mainwindow.py:59 semafor.py:48 semafor.py:660
+#: mainwindow.py:24 mainwindow.py:60 semafor.py:48 semafor.py:660
 #: semafor.py:667 semafor.py:674 semafor.py:681 semafor.py:688 semafor.py:695
 #: semafor.py:702 semafor.py:709 semafor.py:716 semafor.py:723 semafor.py:730
 #: semafor.py:737 semafor.py:744
 msgid "Category choosing"
 msgstr ""
 
-#: mainwindow.py:27 semafor.py:47 semafor.py:654
+#: mainwindow.py:27 semafor.py:47 semafor.py:654 semafor.py:1330
 msgid "Semafor"
 msgstr ""
 
-#: mainwindow.py:47 semafor.py:664 semafor.py:788 semafor.py:804 semafor.py:852
+#: mainwindow.py:48 semafor.py:664 semafor.py:788 semafor.py:804 semafor.py:852
 #: semafor.py:900 semafor.py:948 semafor.py:996 semafor.py:1044 semafor.py:1092
 #: semafor.py:1140 semafor.py:1188 semafor.py:1236 semafor.py:1284
 msgid "The basics of the traffic safety and traffic terms"
 msgstr ""
 
-#: mainwindow.py:48 semafor.py:671 semafor.py:755 semafor.py:836 semafor.py:854
+#: mainwindow.py:49 semafor.py:671 semafor.py:755 semafor.py:836 semafor.py:854
 #: semafor.py:902 semafor.py:950 semafor.py:998 semafor.py:1046 semafor.py:1094
 #: semafor.py:1142 semafor.py:1190 semafor.py:1238 semafor.py:1286
 msgid "Special regulations and permissions"
 msgstr ""
 
-#: mainwindow.py:49 semafor.py:678 semafor.py:757 semafor.py:806 semafor.py:884
+#: mainwindow.py:50 semafor.py:678 semafor.py:757 semafor.py:806 semafor.py:884
 #: semafor.py:904 semafor.py:952 semafor.py:1000 semafor.py:1048
 #: semafor.py:1096 semafor.py:1144 semafor.py:1192 semafor.py:1240
 #: semafor.py:1288
 msgid "The consequences of the violation of traffic rules"
 msgstr ""
 
-#: mainwindow.py:50 semafor.py:685 semafor.py:759 semafor.py:808 semafor.py:856
+#: mainwindow.py:51 semafor.py:685 semafor.py:759 semafor.py:808 semafor.py:856
 #: semafor.py:932 semafor.py:954 semafor.py:1002 semafor.py:1050
 #: semafor.py:1098 semafor.py:1146 semafor.py:1194 semafor.py:1242
 #: semafor.py:1290
 msgid "Traffic rules"
 msgstr ""
 
-#: mainwindow.py:51 semafor.py:692 semafor.py:761 semafor.py:810 semafor.py:858
+#: mainwindow.py:52 semafor.py:692 semafor.py:761 semafor.py:810 semafor.py:858
 #: semafor.py:906 semafor.py:980 semafor.py:1004 semafor.py:1052
 #: semafor.py:1100 semafor.py:1148 semafor.py:1196 semafor.py:1244
 #: semafor.py:1292
 msgid "Traffic signals"
 msgstr ""
 
-#: mainwindow.py:52 semafor.py:699 semafor.py:763 semafor.py:812 semafor.py:860
+#: mainwindow.py:53 semafor.py:699 semafor.py:763 semafor.py:812 semafor.py:860
 #: semafor.py:908 semafor.py:956 semafor.py:1028 semafor.py:1054
 #: semafor.py:1102 semafor.py:1150 semafor.py:1198 semafor.py:1246
 #: semafor.py:1294
 msgid "Drivers"
 msgstr ""
 
-#: mainwindow.py:53 semafor.py:706 semafor.py:765 semafor.py:814 semafor.py:862
+#: mainwindow.py:54 semafor.py:706 semafor.py:765 semafor.py:814 semafor.py:862
 #: semafor.py:910 semafor.py:958 semafor.py:1006 semafor.py:1076
 #: semafor.py:1112 semafor.py:1152 semafor.py:1200 semafor.py:1248
 #: semafor.py:1296
 msgid "Duties in the case of the traffic accident"
 msgstr ""
 
-#: mainwindow.py:54 semafor.py:713 semafor.py:769 semafor.py:818 semafor.py:866
+#: mainwindow.py:55 semafor.py:713 semafor.py:769 semafor.py:818 semafor.py:866
 #: semafor.py:914 semafor.py:962 semafor.py:1010 semafor.py:1058
 #: semafor.py:1124 semafor.py:1154 semafor.py:1204 semafor.py:1252
 #: semafor.py:1300
 msgid "Driving period driver resting"
 msgstr ""
 
-#: mainwindow.py:55 semafor.py:720 semafor.py:767 semafor.py:816 semafor.py:864
+#: mainwindow.py:56 semafor.py:720 semafor.py:767 semafor.py:816 semafor.py:864
 #: semafor.py:912 semafor.py:960 semafor.py:1008 semafor.py:1056
 #: semafor.py:1104 semafor.py:1172 semafor.py:1202 semafor.py:1250
 #: semafor.py:1298
 msgid "Tachograph usage"
 msgstr ""
 
-#: mainwindow.py:56 semafor.py:727 semafor.py:771 semafor.py:820 semafor.py:868
+#: mainwindow.py:57 semafor.py:727 semafor.py:771 semafor.py:820 semafor.py:868
 #: semafor.py:916 semafor.py:964 semafor.py:1012 semafor.py:1060
 #: semafor.py:1106 semafor.py:1156 semafor.py:1220 semafor.py:1254
 #: semafor.py:1302
 msgid "Vehicles"
 msgstr ""
 
-#: mainwindow.py:57 semafor.py:734 semafor.py:773 semafor.py:822 semafor.py:870
+#: mainwindow.py:58 semafor.py:734 semafor.py:773 semafor.py:822 semafor.py:870
 #: semafor.py:918 semafor.py:966 semafor.py:1014 semafor.py:1062
 #: semafor.py:1108 semafor.py:1158 semafor.py:1206 semafor.py:1268
 #: semafor.py:1304
 msgid "Vehicle technical conditions"
 msgstr ""
 
-#: mainwindow.py:58 semafor.py:741 semafor.py:775 semafor.py:824 semafor.py:872
+#: mainwindow.py:59 semafor.py:741 semafor.py:775 semafor.py:824 semafor.py:872
 #: semafor.py:920 semafor.py:968 semafor.py:1016 semafor.py:1064
 #: semafor.py:1110 semafor.py:1160 semafor.py:1208 semafor.py:1256
 #: semafor.py:1316
@@ -227,7 +227,7 @@ msgstr ""
 msgid "Marko M. Kostic <marko.m.kostic@gmail.com>"
 msgstr ""
 
-#: semafor.py:1340
+#: semafor.py:1339
 msgid "© 2011-2016 Marko M. Kostic"
 msgstr ""
 
