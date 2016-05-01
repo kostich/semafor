@@ -367,7 +367,7 @@ class Semafor(Gtk.Application):
             # also check if we are on the first or last question and set
             # the left and right arrow accordingly
             if self.win.randombutton.get_active():
-                # we need to get a random number but that random numer shouldn't
+                # we need to get a random number but that random number shouldn't
                 # be the same as the current number in the variable
                 lastobsip = currentobsip
                 while currentobsip == lastobsip:
