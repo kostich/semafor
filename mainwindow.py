@@ -9,7 +9,10 @@ from config import *
 from gi.repository import Gtk, Gio, GLib, Gdk
 
 domain = 'semafor'
-localedir = programdir + '/locale'
+if os.path.exists('/usr/share/semafor'):  # We are installed system-wide
+    localedir = '/usr/share/locale'  # so we should use system locale dir
+else:
+    localedir = programdir + '/locale'  # developing locally
 
 locale.setlocale(locale.LC_ALL, '')
 locale.bindtextdomain(domain, localedir)
