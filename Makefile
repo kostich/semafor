@@ -12,7 +12,8 @@ uninstall:
 	unlink /usr/bin/semafor
 
 translations:
-	mkdir -p ./locale
+	mkdir -p ./locale/sr/LC_MESSAGES/
+	mkdir -p ./locale/sr@latin/LC_MESSAGES/
 	msgfmt po/sr.po -o ./locale/sr/LC_MESSAGES/semafor.mo
 	msgfmt po/sr@latin.po -o ./locale/sr@latin/LC_MESSAGES/semafor.mo
 
