@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Semafor
+Name[sr]=Семафор
+Name[sr@latin]=Semafor
+Comment=Tool to learn driving rules in Serbia
+Comment[sr]=Алатка за учење правила вожње
+Comment[sr@latin]=Alatka za učenje pravila vožnje
+Encoding=UTF-8
+Icon=/usr/share/semafor/icon/icon.png
+Exec=/usr/share/semafor/semafor.py
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Education;
+Keywords=Semafor;
+Keywords[sr]=Семафор;Semafor;
+Keywords[sr@latin]=Семафор;Semafor;
+X-Desktop-File-Install-Version=0.22
