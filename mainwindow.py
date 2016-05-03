@@ -4,6 +4,7 @@ import gi, sqlite3, tempfile
 gi.require_version('Gtk', '3.0')
 import locale
 import gettext
+import ctypes
 
 from config import *
 from gi.repository import Gtk, Gio, GLib, Gdk
@@ -14,11 +15,25 @@ if os.path.exists('/usr/share/semafor'):  # We are installed system-wide
 else:
     localedir = programdir + '/locale'  # developing locally
 
-locale.setlocale(locale.LC_ALL, '')
-locale.bindtextdomain(domain, localedir)
-gettext.bindtextdomain(domain, localedir)
-gettext.textdomain(domain)
-_ = gettext.gettext
+# Loading the correct translation under Windows is a bit trickier than on Linux
+if os.name == "nt":
+    # TODO: Implement proper language switcher
+    # On Windows we will default to the Serbian Cyrillic translation until a proper
+    # language switcher isn't implemented.
+    os.environ['LANG'] = 'sr_RS'
+    libintl = ctypes.cdll.LoadLibrary(programdir + "/libintl-8.dll")
+    libintl.bindtextdomain(domain, localedir)
+    libintl.bind_textdomain_codeset(domain, "UTF-8")
+    locale.setlocale(locale.LC_ALL, '')
+    gettext.bindtextdomain(domain, localedir)
+    gettext.textdomain(domain)
+    _ = gettext.gettext
+else:  # We are running a sane OS such as Linux.
+    locale.setlocale(locale.LC_ALL, '')
+    locale.bindtextdomain(domain, localedir)
+    gettext.bindtextdomain(domain, localedir)
+    gettext.textdomain(domain)
+    _ = gettext.gettext
 
 class MainWindow(Gtk.ApplicationWindow):
 
@@ -34,7 +49,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.hbbuilder.add_from_file(programdir + '/ui/headerbar.ui')
         self.hb = self.hbbuilder.get_object("programheaderbar")
         self.set_titlebar(self.hb)
-
+ 
         self.partbutton = self.hbbuilder.get_object("menu")
         icon = Gio.ThemedIcon(name="open-menu-symbolic")
         image = Gtk.Image.new_from_gicon(icon, Gtk.IconSize.BUTTON)
@@ -69,12 +84,15 @@ class MainWindow(Gtk.ApplicationWindow):
 
         self.rightarrow = self.hbbuilder.get_object("rightarrow")
         self.rightarrow.add(Gtk.Arrow(Gtk.ArrowType.RIGHT, Gtk.ShadowType.NONE))
+        fix_untranslated_glade_in_win(self.hbbuilder)
 
         # category selection window
         self.selwinbuilder = Gtk.Builder()
         self.selwinbuilder.set_translation_domain(domain)
         self.selwinbuilder.add_from_file(programdir + '/ui/categoryselection.ui')
         self.selectionwindow = self.selwinbuilder.get_object("categorybox1")
+        fix_untranslated_glade_in_win(self.selwinbuilder)
+						
         # Setup an image for every category button
         self.category_am_image = self.selwinbuilder.get_object("image1")
         self.category_am_image.set_from_file(programdir + '/icon/categories/category-am.png')
@@ -117,6 +135,7 @@ class MainWindow(Gtk.ApplicationWindow):
         partselectionwindow.set_translation_domain(domain)
         partselectionwindow.add_from_file(programdir + '/ui/partselection.ui')
         self.partwindow = partselectionwindow.get_object("partbox1")
+        fix_untranslated_glade_in_win(partselectionwindow)
 
         # no database window
         nodbselectionwindow = Gtk.Builder()
@@ -125,6 +144,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.nodbwindow = nodbselectionwindow.get_object("grid1")
         self.nodbimage = nodbselectionwindow.get_object("imagenodb")
         self.nodbimage.set_from_file(programdir + '/icon/no-db.png')
+        fix_untranslated_glade_in_win(nodbselectionwindow)
 
         # question window
         self.questionbuilder = Gtk.Builder()
@@ -149,3 +169,22 @@ class MainWindow(Gtk.ApplicationWindow):
         self.label5 = self.questionbuilder.get_object("label5")
         self.answer6 = self.questionbuilder.get_object("answer6")
         self.label6 = self.questionbuilder.get_object("label6")
+        fix_untranslated_glade_in_win(self.questionbuilder)
+
+def fix_untranslated_glade_in_win(gtkbuilder):
+	#TODO: remove this when upstream fixes translations with Python3+Windows
+    # https://github.com/tobias47n9e/pygobject-locale/issues/1
+    if os.name == "nt": 
+        for obj in gtkbuilder.get_objects(): 
+            if (not isinstance(obj, Gtk.SeparatorMenuItem)) and hasattr(obj, "get_label"): 
+                label = obj.get_label() 
+                if label is not None: 
+                    obj.set_label(_(label)) 
+            elif hasattr(obj, "get_title"):
+                title = obj.get_title() 
+                if title is not None: 
+                    obj.set_title(_(title)) 
+            if hasattr(obj, "get_tooltip_text"): 
+                text = obj.get_tooltip_text() 
+                if text is not None: 
+                    obj.set_tooltip_text(_(text))

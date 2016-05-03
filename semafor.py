@@ -6,10 +6,12 @@ gi.require_version('Gtk', '3.0')
 import mainwindow
 import locale
 import gettext
+import ctypes
 
 from gi.repository import Gtk, Gio
 from loadquestion import *
 from random import randint
+from mainwindow import fix_untranslated_glade_in_win
 
 domain = 'semafor'
 if os.path.exists('/usr/share/semafor'):  # We are installed system-wide
@@ -17,11 +19,25 @@ if os.path.exists('/usr/share/semafor'):  # We are installed system-wide
 else:
     localedir = programdir + '/locale'  # developing locally
 
-locale.setlocale(locale.LC_ALL, '')
-locale.bindtextdomain(domain, localedir)
-gettext.bindtextdomain(domain, localedir)
-gettext.textdomain(domain)
-_ = gettext.gettext
+# Loading the correct translation under Windows is a bit trickier than on Linux
+if os.name == "nt":
+    # TODO: Implement proper language switcher
+    # On Windows we will default to the Serbian Cyrillic translation until a proper
+    # language switcher isn't implemented.
+    os.environ['LANG'] = 'sr_RS'
+    libintl = ctypes.cdll.LoadLibrary(programdir + "/libintl-8.dll")
+    libintl.bindtextdomain(domain, localedir)
+    libintl.bind_textdomain_codeset(domain, "UTF-8")
+    locale.setlocale(locale.LC_ALL, '')
+    gettext.bindtextdomain(domain, localedir)
+    gettext.textdomain(domain)
+    _ = gettext.gettext
+else:  # We are running a sane OS such as Linux.
+    locale.setlocale(locale.LC_ALL, '')
+    locale.bindtextdomain(domain, localedir)
+    gettext.bindtextdomain(domain, localedir)
+    gettext.textdomain(domain)
+    _ = gettext.gettext
 
 currentobsip = 0
 currentpmio = 0
@@ -53,7 +69,10 @@ class Semafor(Gtk.Application):
         builder = Gtk.Builder()
         builder.set_translation_domain(domain)
         builder.add_from_file(programdir + '/ui/appmenu.ui')
-        self.app.set_app_menu(builder.get_object("app-menu"))
+        appmenu = builder.get_object("app-menu")
+        self.app.set_app_menu(appmenu)
+        #TODO: remove this when upstream fixes translations with Python3+Windows 
+        fix_untranslated_glade_in_win(builder)
 
         # handlers for buttons on category selection window
         handlersselwin = {
