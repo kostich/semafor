@@ -56,7 +56,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.partbutton.add(image)
 
         self.randombutton = self.hbbuilder.get_object("random")
-        icon = Gio.ThemedIcon(name="media-playlist-shuffle-symbolic.symbolic")
+        icon = Gio.ThemedIcon(name="media-playlist-shuffle-symbolic")
         image = Gtk.Image.new_from_gicon(icon, Gtk.IconSize.BUTTON)
         self.randombutton.add(image)
 
