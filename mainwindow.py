@@ -172,7 +172,7 @@ class MainWindow(Gtk.ApplicationWindow):
         fix_untranslated_glade_in_win(self.questionbuilder)
 
 def fix_untranslated_glade_in_win(gtkbuilder):
-	#TODO: remove this when upstream fixes translations with Python3+Windows
+    #TODO: remove this when upstream fixes translations with Python3+Windows
     # https://github.com/tobias47n9e/pygobject-locale/issues/1
     if os.name == "nt": 
         for obj in gtkbuilder.get_objects(): 
