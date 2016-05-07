@@ -16,6 +16,9 @@ in Serbia.
   * cd into the directory where you cloned this repo,
   * issue the command `sudo make install` to install it.
 
+If you already installed the program earlier, you'll need to uninstall it first,
+as described in the "Removal" section and then execute `sudo make install` again.
+
 ##Usage
 After doing this, you can start Semafor by:
   * Searching for Semafor or Семафор in Gnome Overview (if using Gnome Shell),
