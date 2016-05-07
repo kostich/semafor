@@ -113,8 +113,10 @@ def loadquestion(questionnum, part, window):
         query = 'SELECT picture1 FROM ' + part + ' WHERE id = ' + questionnum
         c.execute(query)
         picture = c.fetchone()[0]
+
         if picture == None:
             raise sqlite3.OperationalError
+
         # We have to do this because of the bug in NamedTemporaryFile
         # on Windows. https://bugs.python.org/issue14243#msg155278
         if os.name == "nt":
@@ -154,10 +156,10 @@ def loadquestion(questionnum, part, window):
         query = 'SELECT picture2 FROM ' + part + ' WHERE id = ' + questionnum
         c.execute(query)
         picture = c.fetchone()[0]
+
         if picture == None:
             raise sqlite3.OperationalError
-        # We have to do this because of the bug in NamedTemporaryFile
-        # on Windows. https://bugs.python.org/issue14243#msg155278
+
         if os.name == "nt":
             f = tempfile.NamedTemporaryFile('wb', delete=False)
             f.write(picture)
@@ -195,10 +197,10 @@ def loadquestion(questionnum, part, window):
         query = 'SELECT picture3 FROM ' + part + ' WHERE id = ' + questionnum
         c.execute(query)
         picture = c.fetchone()[0]
+
         if picture == None:
             raise sqlite3.OperationalError
-        # We have to do this because of the bug in NamedTemporaryFile
-        # on Windows. https://bugs.python.org/issue14243#msg155278
+
         if os.name == "nt":
             f = tempfile.NamedTemporaryFile('wb', delete=False)
             f.write(picture)
@@ -236,10 +238,10 @@ def loadquestion(questionnum, part, window):
         query = 'SELECT picture4 FROM ' + part + ' WHERE id = ' + questionnum
         c.execute(query)
         picture = c.fetchone()[0]
+
         if picture == None:
             raise sqlite3.OperationalError
-        # We have to do this because of the bug in NamedTemporaryFile
-        # on Windows. https://bugs.python.org/issue14243#msg155278
+
         if os.name == "nt":
             f = tempfile.NamedTemporaryFile('wb', delete=False)
             f.write(picture)
@@ -277,10 +279,10 @@ def loadquestion(questionnum, part, window):
         query = 'SELECT picture5 FROM ' + part + ' WHERE id = ' + questionnum
         c.execute(query)
         picture = c.fetchone()[0]
+
         if picture == None:
             raise sqlite3.OperationalError
-        # We have to do this because of the bug in NamedTemporaryFile
-        # on Windows. https://bugs.python.org/issue14243#msg155278
+
         if os.name == "nt":
             f = tempfile.NamedTemporaryFile('wb', delete=False)
             f.write(picture)
@@ -318,10 +320,10 @@ def loadquestion(questionnum, part, window):
         query = 'SELECT picture6 FROM ' + part + ' WHERE id = ' + questionnum
         c.execute(query)
         picture = c.fetchone()[0]
+
         if picture == None:
             raise sqlite3.OperationalError
-        # We have to do this because of the bug in NamedTemporaryFile
-        # on Windows. https://bugs.python.org/issue14243#msg155278
+
         if os.name == "nt":
             f = tempfile.NamedTemporaryFile('wb', delete=False)
             f.write(picture)
