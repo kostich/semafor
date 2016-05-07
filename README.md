@@ -3,6 +3,8 @@
 Semafor (read as Semaphore) is a new GNOME program for testing the knowledge of driving regulations
 in Serbia.
 
+**Early Alpha**.
+
 ##Depends on
 - gtk3 >= 3.16
 - python3
@@ -12,13 +14,17 @@ in Serbia.
 ##Installation
   * Clone this repo,
   * cd into the directory where you cloned this repo,
-  * issue command `sudo make install` to install it.
+  * issue the command `sudo make install` to install it.
 
 ##Usage
 After doing this, you can start Semafor by:
   * Searching for Semafor or Семафор in Gnome Overview (if using Gnome Shell),
   * executing command `semafor` in the Terminal,
   * executing command `/usr/share/semafor/semafor.py` in the Terminal.
+
+If you wish to run it locally, without installing it to your system /usr, you can
+do that by first generating the translations with `make translations` and then
+by executing `./semafor.py` while in the directory where you cloned the code.
 
 After staring it up for the first time, you'll receive an error about missing question database.
 
@@ -31,6 +37,9 @@ To see how this program works, download database with questions into the folder 
 is located. If you have installed the program as described in the Installation section, download
 the assets with `sudo curl http://костић.срб/data.db -o /usr/share/semafor/data.db` and restart
 the program.
+
+If running the program locally, just do `curl http://костић.срб/data.db -o ./data.db` while
+in the directory where you cloned the code and restart the program.
 
 ##Removal
 To remove your system-wide installed Semafor, just execute `sudo make uninstall`
