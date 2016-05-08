@@ -24,5 +24,6 @@ directory but don't copy over any .dll from any subdirectory.
 
 Now you can double-click semafor.exe and Semafor will launch on Windows.
 
-If you get the error about the missing question database, follow the instructions
-for acquiring the database listed in the README.
+If you get the error about the missing question database, download the database
+from the address `http://костић.срб/data.db` via the web browser and place the
+file into the directory where the Semafor executable is located.
