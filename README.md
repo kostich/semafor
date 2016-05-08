@@ -44,6 +44,10 @@ the program.
 If running the program locally, just do `curl http://костић.срб/data.db -o ./data.db` while
 in the directory where you cloned the code and restart the program.
 
+##Usage on Windows
+
+Described in the WINDOWS file.
+
 ##Removal
 To remove your system-wide installed Semafor, just execute `sudo make uninstall`
 in the directory where you cloned this repo.
