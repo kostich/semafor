@@ -92,7 +92,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.selwinbuilder.add_from_file(programdir + '/ui/categoryselection.ui')
         self.selectionwindow = self.selwinbuilder.get_object("categorybox1")
         fix_untranslated_glade_in_win(self.selwinbuilder)
-						
+
         # Setup an image for every category button
         self.category_am_image = self.selwinbuilder.get_object("image1")
         self.category_am_image.set_from_file(programdir + '/icon/categories/category-am.png')
