@@ -5,6 +5,8 @@ in Serbia.
 
 **Early Alpha**.
 
+![Alt text](screenshot.png?raw=true "Semafor interface")
+
 ##Depends on
 - gtk3 >= 3.16
 - python3
