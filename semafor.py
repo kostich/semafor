@@ -1349,7 +1349,7 @@ class Semafor(Gtk.Application):
         dialog.set_default_size(430, 390)
         dialog.set_transient_for(self.win)
         dialog.set_program_name(_('Semafor'))
-        dialog.set_version('1.0')
+        dialog.set_version('1.14')
         dialog.set_website('http://sourceforge.net/projects/semafor/')
         dialog.set_website_label(_('Semafor website.'))
         dialog.set_comments(_('Driving license application.'))
