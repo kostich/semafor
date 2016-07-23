@@ -1354,7 +1354,7 @@ class Semafor(Gtk.Application):
         dialog.set_website_label(_('Semafor website.'))
         dialog.set_comments(_('Driving license application.'))
         dialog.set_translator_credits('translator-credits')
-        dialog.set_artists([_('Petar "mamuz" Milojevic <trenatre@gmail.com>')])
+        dialog.set_artists([_('Zdravko Markovic <zdravkoo@gmail.com>'), _('Petar "mamuz" Milojevic <trenatre@gmail.com>')])
         dialog.set_authors([_('Marko M. Kostic <marko.m.kostic@gmail.com>')])
         dialog.set_license_type(Gtk.License(3))
         dialog.set_copyright(_('© 2011-2016 Marko M. Kostic'))
