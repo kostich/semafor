@@ -3,328 +3,321 @@
 # Copyright (C) 2016 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Марко М. Костић <marko.m.kostic@gmail.com>, 2016.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-30 23:08+0200\n"
-"PO-Revision-Date: 2016-04-30 22:17+0200\n"
+"POT-Creation-Date: 2016-07-23 19:02+0200\n"
+"PO-Revision-Date: 2016-07-23 19:15+0200\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
-#: mainwindow.py:24 mainwindow.py:60 semafor.py:48 semafor.py:660
-#: semafor.py:667 semafor.py:674 semafor.py:681 semafor.py:688 semafor.py:695
-#: semafor.py:702 semafor.py:709 semafor.py:716 semafor.py:723 semafor.py:730
-#: semafor.py:737 semafor.py:744
+#: mainwindow.py:41 mainwindow.py:77 semafor.py:66 semafor.py:681
+#: semafor.py:688 semafor.py:695 semafor.py:702 semafor.py:709 semafor.py:716
+#: semafor.py:723 semafor.py:730 semafor.py:737 semafor.py:744 semafor.py:751
+#: semafor.py:758 semafor.py:765
 msgid "Category choosing"
 msgstr "Бирање категорије"
 
-#: mainwindow.py:27 semafor.py:47 semafor.py:654 semafor.py:1330
+#: mainwindow.py:44 semafor.py:65 semafor.py:675 semafor.py:1351
 msgid "Semafor"
 msgstr "Семафор"
 
-#: mainwindow.py:48 semafor.py:664 semafor.py:788 semafor.py:804 semafor.py:852
-#: semafor.py:900 semafor.py:948 semafor.py:996 semafor.py:1044 semafor.py:1092
-#: semafor.py:1140 semafor.py:1188 semafor.py:1236 semafor.py:1284
+#: mainwindow.py:65 semafor.py:685 semafor.py:809 semafor.py:825 semafor.py:873
+#: semafor.py:921 semafor.py:969 semafor.py:1017 semafor.py:1065
+#: semafor.py:1113 semafor.py:1161 semafor.py:1209 semafor.py:1257
+#: semafor.py:1305
 msgid "The basics of the traffic safety and traffic terms"
 msgstr "Основе безбедности саобраћаја и појмови"
 
-#: mainwindow.py:49 semafor.py:671 semafor.py:755 semafor.py:836 semafor.py:854
-#: semafor.py:902 semafor.py:950 semafor.py:998 semafor.py:1046 semafor.py:1094
-#: semafor.py:1142 semafor.py:1190 semafor.py:1238 semafor.py:1286
+#: mainwindow.py:66 semafor.py:692 semafor.py:776 semafor.py:857 semafor.py:875
+#: semafor.py:923 semafor.py:971 semafor.py:1019 semafor.py:1067
+#: semafor.py:1115 semafor.py:1163 semafor.py:1211 semafor.py:1259
+#: semafor.py:1307
 msgid "Special regulations and permissions"
 msgstr "Посебне мере и овлашћења"
 
-#: mainwindow.py:50 semafor.py:678 semafor.py:757 semafor.py:806 semafor.py:884
-#: semafor.py:904 semafor.py:952 semafor.py:1000 semafor.py:1048
-#: semafor.py:1096 semafor.py:1144 semafor.py:1192 semafor.py:1240
-#: semafor.py:1288
+#: mainwindow.py:67 semafor.py:699 semafor.py:778 semafor.py:827 semafor.py:905
+#: semafor.py:925 semafor.py:973 semafor.py:1021 semafor.py:1069
+#: semafor.py:1117 semafor.py:1165 semafor.py:1213 semafor.py:1261
+#: semafor.py:1309
 msgid "The consequences of the violation of traffic rules"
 msgstr "Последице непоштовања прописа"
 
-#: mainwindow.py:51 semafor.py:685 semafor.py:759 semafor.py:808 semafor.py:856
-#: semafor.py:932 semafor.py:954 semafor.py:1002 semafor.py:1050
-#: semafor.py:1098 semafor.py:1146 semafor.py:1194 semafor.py:1242
-#: semafor.py:1290
+#: mainwindow.py:68 semafor.py:706 semafor.py:780 semafor.py:829 semafor.py:877
+#: semafor.py:953 semafor.py:975 semafor.py:1023 semafor.py:1071
+#: semafor.py:1119 semafor.py:1167 semafor.py:1215 semafor.py:1263
+#: semafor.py:1311
 msgid "Traffic rules"
 msgstr "Правила саобраћаја"
 
-#: mainwindow.py:52 semafor.py:692 semafor.py:761 semafor.py:810 semafor.py:858
-#: semafor.py:906 semafor.py:980 semafor.py:1004 semafor.py:1052
-#: semafor.py:1100 semafor.py:1148 semafor.py:1196 semafor.py:1244
-#: semafor.py:1292
+#: mainwindow.py:69 semafor.py:713 semafor.py:782 semafor.py:831 semafor.py:879
+#: semafor.py:927 semafor.py:1001 semafor.py:1025 semafor.py:1073
+#: semafor.py:1121 semafor.py:1169 semafor.py:1217 semafor.py:1265
+#: semafor.py:1313
 msgid "Traffic signals"
 msgstr "Саобраћајна сигнализација"
 
-#: mainwindow.py:53 semafor.py:699 semafor.py:763 semafor.py:812 semafor.py:860
-#: semafor.py:908 semafor.py:956 semafor.py:1028 semafor.py:1054
-#: semafor.py:1102 semafor.py:1150 semafor.py:1198 semafor.py:1246
-#: semafor.py:1294
+#: mainwindow.py:70 semafor.py:720 semafor.py:784 semafor.py:833 semafor.py:881
+#: semafor.py:929 semafor.py:977 semafor.py:1049 semafor.py:1075
+#: semafor.py:1123 semafor.py:1171 semafor.py:1219 semafor.py:1267
+#: semafor.py:1315
 msgid "Drivers"
 msgstr "Возачи"
 
-#: mainwindow.py:54 semafor.py:706 semafor.py:765 semafor.py:814 semafor.py:862
-#: semafor.py:910 semafor.py:958 semafor.py:1006 semafor.py:1076
-#: semafor.py:1112 semafor.py:1152 semafor.py:1200 semafor.py:1248
-#: semafor.py:1296
+#: mainwindow.py:71 semafor.py:727 semafor.py:786 semafor.py:835 semafor.py:883
+#: semafor.py:931 semafor.py:979 semafor.py:1027 semafor.py:1097
+#: semafor.py:1133 semafor.py:1173 semafor.py:1221 semafor.py:1269
+#: semafor.py:1317
 msgid "Duties in the case of the traffic accident"
 msgstr "Дужности у случају саобраћајне незгоде"
 
-#: mainwindow.py:55 semafor.py:713 semafor.py:769 semafor.py:818 semafor.py:866
-#: semafor.py:914 semafor.py:962 semafor.py:1010 semafor.py:1058
-#: semafor.py:1124 semafor.py:1154 semafor.py:1204 semafor.py:1252
-#: semafor.py:1300
+#: mainwindow.py:72 semafor.py:734 semafor.py:790 semafor.py:839 semafor.py:887
+#: semafor.py:935 semafor.py:983 semafor.py:1031 semafor.py:1079
+#: semafor.py:1145 semafor.py:1175 semafor.py:1225 semafor.py:1273
+#: semafor.py:1321
 msgid "Driving period driver resting"
 msgstr "Време управљања и одмори возача"
 
-#: mainwindow.py:56 semafor.py:720 semafor.py:767 semafor.py:816 semafor.py:864
-#: semafor.py:912 semafor.py:960 semafor.py:1008 semafor.py:1056
-#: semafor.py:1104 semafor.py:1172 semafor.py:1202 semafor.py:1250
-#: semafor.py:1298
+#: mainwindow.py:73 semafor.py:741 semafor.py:788 semafor.py:837 semafor.py:885
+#: semafor.py:933 semafor.py:981 semafor.py:1029 semafor.py:1077
+#: semafor.py:1125 semafor.py:1193 semafor.py:1223 semafor.py:1271
+#: semafor.py:1319
 msgid "Tachograph usage"
 msgstr "Начин употребе тахографа"
 
-#: mainwindow.py:57 semafor.py:727 semafor.py:771 semafor.py:820 semafor.py:868
-#: semafor.py:916 semafor.py:964 semafor.py:1012 semafor.py:1060
-#: semafor.py:1106 semafor.py:1156 semafor.py:1220 semafor.py:1254
-#: semafor.py:1302
+#: mainwindow.py:74 semafor.py:748 semafor.py:792 semafor.py:841 semafor.py:889
+#: semafor.py:937 semafor.py:985 semafor.py:1033 semafor.py:1081
+#: semafor.py:1127 semafor.py:1177 semafor.py:1241 semafor.py:1275
+#: semafor.py:1323
 msgid "Vehicles"
 msgstr "Возила"
 
-#: mainwindow.py:58 semafor.py:734 semafor.py:773 semafor.py:822 semafor.py:870
-#: semafor.py:918 semafor.py:966 semafor.py:1014 semafor.py:1062
-#: semafor.py:1108 semafor.py:1158 semafor.py:1206 semafor.py:1268
-#: semafor.py:1304
+#: mainwindow.py:75 semafor.py:755 semafor.py:794 semafor.py:843 semafor.py:891
+#: semafor.py:939 semafor.py:987 semafor.py:1035 semafor.py:1083
+#: semafor.py:1129 semafor.py:1179 semafor.py:1227 semafor.py:1289
+#: semafor.py:1325
 msgid "Vehicle technical conditions"
 msgstr "Технички услови за возила"
 
-#: mainwindow.py:59 semafor.py:741 semafor.py:775 semafor.py:824 semafor.py:872
-#: semafor.py:920 semafor.py:968 semafor.py:1016 semafor.py:1064
-#: semafor.py:1110 semafor.py:1160 semafor.py:1208 semafor.py:1256
-#: semafor.py:1316
+#: mainwindow.py:76 semafor.py:762 semafor.py:796 semafor.py:845 semafor.py:893
+#: semafor.py:941 semafor.py:989 semafor.py:1037 semafor.py:1085
+#: semafor.py:1131 semafor.py:1181 semafor.py:1229 semafor.py:1277
+#: semafor.py:1337
 msgid "Cargo and passenger transport"
 msgstr "Превоз терета и лица возилима"
 
-#: semafor.py:166
+#: semafor.py:187
 msgid "Semafor - AM"
 msgstr "Семафор - AM"
 
-#: semafor.py:167 semafor.py:175 semafor.py:183 semafor.py:191 semafor.py:199
-#: semafor.py:207 semafor.py:215 semafor.py:223 semafor.py:231 semafor.py:239
-#: semafor.py:247 semafor.py:255 semafor.py:263 semafor.py:271 semafor.py:279
-#: semafor.py:287 semafor.py:295 semafor.py:657 semafor.py:753 semafor.py:802
-#: semafor.py:850 semafor.py:898 semafor.py:946 semafor.py:994 semafor.py:1042
-#: semafor.py:1090 semafor.py:1138 semafor.py:1186 semafor.py:1234
-#: semafor.py:1282
+#: semafor.py:188 semafor.py:196 semafor.py:204 semafor.py:212 semafor.py:220
+#: semafor.py:228 semafor.py:236 semafor.py:244 semafor.py:252 semafor.py:260
+#: semafor.py:268 semafor.py:276 semafor.py:284 semafor.py:292 semafor.py:300
+#: semafor.py:308 semafor.py:316 semafor.py:678 semafor.py:774 semafor.py:823
+#: semafor.py:871 semafor.py:919 semafor.py:967 semafor.py:1015 semafor.py:1063
+#: semafor.py:1111 semafor.py:1159 semafor.py:1207 semafor.py:1255
+#: semafor.py:1303
 msgid "Area choosing"
 msgstr "Бирање области"
 
-#: semafor.py:174
+#: semafor.py:195
 msgid "Semafor - A1"
 msgstr "Семафор - A1"
 
-#: semafor.py:182
+#: semafor.py:203
 msgid "Semafor - A2"
 msgstr "Семафор - A2"
 
-#: semafor.py:190
+#: semafor.py:211
 msgid "Semafor - A"
 msgstr "Семафор - A"
 
-#: semafor.py:198
+#: semafor.py:219
 msgid "Semafor - B1"
 msgstr "Семафор - B1"
 
-#: semafor.py:206
+#: semafor.py:227
 msgid "Semafor - B"
 msgstr "Семафор - B"
 
-#: semafor.py:214
+#: semafor.py:235
 msgid "Semafor - BE"
 msgstr "Семафор - BE"
 
-#: semafor.py:222
+#: semafor.py:243
 msgid "Semafor - C1"
 msgstr "Семафор - C1"
 
-#: semafor.py:230
+#: semafor.py:251
 msgid "Semafor - C1E"
 msgstr "Семафор - C1E"
 
-#: semafor.py:238
+#: semafor.py:259
 msgid "Semafor - C"
 msgstr "Семафор - C"
 
-#: semafor.py:246
+#: semafor.py:267
 msgid "Semafor - CE"
 msgstr "Семафор - CE"
 
-#: semafor.py:254
+#: semafor.py:275
 msgid "Semafor - D1"
 msgstr "Семафор - D1"
 
-#: semafor.py:262
+#: semafor.py:283
 msgid "Semafor - D1E"
 msgstr "Семафор - D1E"
 
-#: semafor.py:270
+#: semafor.py:291
 msgid "Semafor - D"
 msgstr "Семафор - D"
 
-#: semafor.py:278
+#: semafor.py:299
 msgid "Semafor - DE"
 msgstr "Семафор - DE"
 
-#: semafor.py:286
+#: semafor.py:307
 msgid "Semafor - F"
 msgstr "Семафор - F"
 
-#: semafor.py:294
+#: semafor.py:315
 msgid "Semafor - M"
 msgstr "Семафор - M"
 
-#: semafor.py:336
+#: semafor.py:357
 msgid "Loads a random question"
 msgstr "Учитава насумично питање"
 
-#: semafor.py:350 headerbar.ui:40
+#: semafor.py:371
 msgid "Loads the next question"
 msgstr "Учитава следеће питање"
 
-#: semafor.py:780 semafor.py:785 semafor.py:828 semafor.py:833 semafor.py:876
-#: semafor.py:881 semafor.py:924 semafor.py:929 semafor.py:972 semafor.py:977
-#: semafor.py:1020 semafor.py:1025 semafor.py:1068 semafor.py:1073
-#: semafor.py:1116 semafor.py:1121 semafor.py:1164 semafor.py:1169
-#: semafor.py:1212 semafor.py:1217 semafor.py:1260 semafor.py:1265
-#: semafor.py:1308 semafor.py:1313
+#: semafor.py:801 semafor.py:806 semafor.py:849 semafor.py:854 semafor.py:897
+#: semafor.py:902 semafor.py:945 semafor.py:950 semafor.py:993 semafor.py:998
+#: semafor.py:1041 semafor.py:1046 semafor.py:1089 semafor.py:1094
+#: semafor.py:1137 semafor.py:1142 semafor.py:1185 semafor.py:1190
+#: semafor.py:1233 semafor.py:1238 semafor.py:1281 semafor.py:1286
+#: semafor.py:1329 semafor.py:1334
 msgid "Error"
 msgstr "Грешка"
 
-#: semafor.py:781 semafor.py:829 semafor.py:877 semafor.py:925 semafor.py:973
-#: semafor.py:1021 semafor.py:1069 semafor.py:1117 semafor.py:1165
-#: semafor.py:1213 semafor.py:1261 semafor.py:1309
+#: semafor.py:802 semafor.py:850 semafor.py:898 semafor.py:946 semafor.py:994
+#: semafor.py:1042 semafor.py:1090 semafor.py:1138 semafor.py:1186
+#: semafor.py:1234 semafor.py:1282 semafor.py:1330
 msgid "No question database"
 msgstr "Нема базе са питањима"
 
-#: semafor.py:1333
+#: semafor.py:1354
 msgid "Semafor website."
 msgstr "Веб страница Семафора."
 
-#: semafor.py:1334
+#: semafor.py:1355
 msgid "Driving license application."
 msgstr "Програм за обуку возача."
 
-#: semafor.py:1336
+#: semafor.py:1358
 msgid "Petar \"mamuz\" Milojevic <trenatre@gmail.com>"
 msgstr "Петар „mamuz” Милојевић <trenatre@gmail.com>"
 
-#: semafor.py:1337
+#: semafor.py:1358
+msgid "Zdravko Markovic <zdravkoo@gmail.com>"
+msgstr "Здравко Марковић <zdravkoo@gmail.com>"
+
+#: semafor.py:1359
 msgid "Marko M. Kostic <marko.m.kostic@gmail.com>"
 msgstr "Марко М. Костић <marko.m.kostic@gmail.com>"
 
-#: semafor.py:1339
+#: semafor.py:1361
 msgid "© 2011-2016 Marko M. Kostic"
 msgstr "© 2011-2016 Марко М. Костић"
 
-#: nodb.ui:48
-msgid ""
-"<span color=\"#828687\">File \"data.db\" which contains the questions can't "
-"be found. For you to continue testing your knowledge, you need to paste this "
-"database in the folder where this program is located and then restart this "
-"program.</span>"
-msgstr ""
-"<span color=\"#828687\">Датотека \"data.db\" која садржи питања није "
-"пронађена. Да бисте могли да тестирате ваше знање, потребно је да ову базу "
-"убаците у фасциклу где се налази овај програм и да поново покрените програм."
-"</span>"
+#: appmenu.ui:8
+msgid "_About"
+msgstr "_О програму"
 
-#: nodb.ui:35
-msgid ""
-"<span size=\"large\" color=\"#828687\"><b>Question database not found</b></"
-"span>"
-msgstr ""
-"<span size=\"large\" color=\"#828687\"><b>База са питањима није пронађена</"
-"b></span>"
+#: appmenu.ui:14
+msgid "_Quit"
+msgstr "_Изађи"
 
-#: categoryselection.ui:197
-msgid "Category \"A\""
-msgstr "Категорија \"A\""
+#: categoryselection.ui:18
+msgid "Choose the category"
+msgstr "Изаберите категорију"
 
-#: categoryselection.ui:115
-msgid "Category \"A1\""
-msgstr "Категорија \"A1\""
-
-#: categoryselection.ui:156
-msgid "Category \"A2\""
-msgstr "Категорија \"A2\""
+#: categoryselection.ui:49
+msgid "Mopeds, light tricycles and quadricycles. From 16 year old."
+msgstr "Мопеди, лаки трицикли и лаки четвороцикли. Од 16 година старости."
 
 #: categoryselection.ui:74
 msgid "Category \"AM\""
 msgstr "Категорија \"AM\""
 
-#: categoryselection.ui:279
-msgid "Category \"B\""
-msgstr "Категорија \"B\""
+#: categoryselection.ui:92
+msgid ""
+"Motorcycles volume to 125 ㎤ and engine power up to 11 kW, with the ratio of "
+"engine power and vehicle mass not exceeding 0.1 kW / kg and heavy tricycles "
+"engine power up to 15 kW. From 16 years of age."
+msgstr ""
+"Мотоцикли запремине до 125 ㎤ и снаге мотора до 11 kW, чији однос снаге "
+"мотора и масе возила није већи од 0,1 kW/kg и тешки трицикли снаге мотора до "
+"15 kW. Од 16 година старости."
+
+#: categoryselection.ui:115
+msgid "Category \"A1\""
+msgstr "Категорија \"A1\""
+
+#: categoryselection.ui:133
+msgid ""
+"Motorcycles whose engine power does not exceed 35 kW and whose ratio of the "
+"engine power and vehicle mass not exceeding 0.2 kW / kg. From the age of 18."
+msgstr ""
+"Мотоцикли чија снага мотора није већа од 35 kW и чији однос снаге мотора и "
+"масе возила није већи од 0,2 kW/kg. Од 18 година старости."
+
+#: categoryselection.ui:156
+msgid "Category \"A2\""
+msgstr "Категорија \"A2\""
+
+#: categoryselection.ui:174
+msgid ""
+"Motorcycles and heavy tricycles whose engine power exceeds 35 kW. From 20 to "
+"24 years of age."
+msgstr ""
+"Мотоцикли и тешки трицикли чија снага мотора прелази 35 kW. Од 20 до 24 "
+"година старости."
+
+#: categoryselection.ui:197
+msgid "Category \"A\""
+msgstr "Категорија \"A\""
+
+#: categoryselection.ui:215
+msgid "Heavy quadricycles. From 18 years of age."
+msgstr "Тешки четвороцикли. Од 18 година старости."
 
 #: categoryselection.ui:238
 msgid "Category \"B1\""
 msgstr "Категорија \"B1\""
 
-#: categoryselection.ui:320
-msgid "Category \"BE\""
-msgstr "Категорија \"BE\""
+#: categoryselection.ui:256
+msgid ""
+"Motor vehicles, except vehicles of category \"A\", \"A1\", \"A2\", \"AM\", "
+"\"F\" and \"M\", which allowed mass does not exceed 3500 kg, and which have "
+"no more than eight seats excluding the driver's seat . From the age of 18."
+msgstr ""
+"Моторна возила, осим возила категорије \"A\", \"A1\", \"A2\", \"AM\", \"F\" "
+"и \"M\", чија дозвољена маса није већа од 3500 kg и која немају више од осам "
+"седишта не рачунајући седиште за возача. Од 18 година старости."
 
-#: categoryselection.ui:443
-msgid "Category \"C\""
-msgstr "Категорија \"C\""
-
-#: categoryselection.ui:361
-msgid "Category \"C1\""
-msgstr "Категорија \"C1\""
-
-#: categoryselection.ui:402
-msgid "Category \"C1E\""
-msgstr "Категорија \"C1E\""
-
-#: categoryselection.ui:484
-msgid "Category \"CE\""
-msgstr "Категорија \"CE\""
-
-#: categoryselection.ui:607
-msgid "Category \"D\""
-msgstr "Категорија \"D\""
-
-#: categoryselection.ui:525
-msgid "Category \"D1\""
-msgstr "Категорија \"D1\""
-
-#: categoryselection.ui:566
-msgid "Category \"D1E\""
-msgstr "Категорија \"D1E\""
-
-#: categoryselection.ui:648
-msgid "Category \"DE\""
-msgstr "Категорија \"DE\""
-
-#: categoryselection.ui:689
-msgid "Category \"F\""
-msgstr "Категорија \"F\""
-
-#: categoryselection.ui:730
-msgid "Category \"M\""
-msgstr "Категорија \"M\""
-
-#: categoryselection.ui:18
-msgid "Choose the category"
-msgstr "Изаберите категорију"
+#: categoryselection.ui:279
+msgid "Category \"B\""
+msgstr "Категорија \"B\""
 
 #: categoryselection.ui:297
 msgid ""
@@ -335,6 +328,24 @@ msgstr ""
 "Скуп возила чије вучно возило припада категорији \"B\", највећа дозвољена "
 "маса прикључног возила је већа од 750 kg, а није већа од 3500 kg. Од 18 "
 "година старости."
+
+#: categoryselection.ui:320
+msgid "Category \"BE\""
+msgstr "Категорија \"BE\""
+
+#: categoryselection.ui:338
+msgid ""
+"Motor vehicles, except vehicles of category \"A\", \"A1\", \"A2\", \"AM\", "
+"\"F\", \"M\", \"B\", \"D\" and \"D1\", whose biggest mass allowed is over "
+"3500 kg and does not exceed 7500 kg. From the age of 18."
+msgstr ""
+"Моторна возила, осим возила категорије \"A\", \"A1\", \"A2\", \"AM\", \"F\", "
+"\"M\", \"B\", \"D\", и \"D1\", чија је највећа дозвољена маса већа од 3500 "
+"kg, а није већа од 7500 kg. Од 18 година старости."
+
+#: categoryselection.ui:361
+msgid "Category \"C1\""
+msgstr "Категорија \"C1\""
 
 #: categoryselection.ui:379
 msgid ""
@@ -352,85 +363,9 @@ msgstr ""
 "\"\", а највећа дозвољена маса прикључног возила прелази 3.500 kg и највећа "
 "дозвољена маса скупа возила не прелази 12.000 kg. Од 18 година старости."
 
-#: categoryselection.ui:461
-msgid ""
-"Collection vehicle which the towing vehicle belongs to category \"C\", a "
-"maximum permitted weight of the trailer is greater than 750 kg. From 21 "
-"years of age."
-msgstr ""
-"Скуп возила чије вучно возило припада категорији \"C\", а највећа дозвољена "
-"маса прикључног возила је већа од 750 kg. Од 21 године старости."
-
-#: categoryselection.ui:625
-msgid ""
-"Collection vehicle which the towing vehicle belongs to category \"D \", a "
-"maximum permitted weight of the trailer is greater than 750 kg. From 24 "
-"years of age."
-msgstr ""
-"Скуп возила чије вучно возило припада категорији \"D\", а највећа дозвољена "
-"маса прикључног возила је већа од 750 kg. Од 24 година старости."
-
-#: categoryselection.ui:543
-msgid ""
-"Collection vehicle which the towing vehicle belongs to category \"D1\" and "
-"the maximum mass of the trailer is greater than 750 kg. From 21 years of age."
-msgstr ""
-"Скуп возила чије вучно возило припада категорији \"D1\", а највећа дозвољена "
-"маса прикључног возила је већа од 750 kg. Од 21 године старости."
-
-#: categoryselection.ui:215
-msgid "Heavy quadricycles. From 18 years of age."
-msgstr "Тешки четвороцикли. Од 18 година старости."
-
-#: headerbar.ui:23
-msgid "Loads the previous question"
-msgstr "Учитава претходно питање"
-
-#: categoryselection.ui:49
-msgid "Mopeds, light tricycles and quadricycles. From 16 year old."
-msgstr "Мопеди, лаки трицикли и лаки четвороцикли. Од 16 година старости."
-
-#: categoryselection.ui:707
-msgid "Motokultivator. From 15 years of age."
-msgstr "Мотокултиватор. Од 15 година старости."
-
-#: categoryselection.ui:502
-msgid ""
-"Motor vehicles for the transport of persons, which in addition to the "
-"driver's seat have more than eight and a maximum of 16 seats and whose "
-"maximum length not exceeding eight meters. From 21 years of age."
-msgstr ""
-"Моторна возила за превоз лица, која осим седишта за возача имају више од "
-"осам, а највише 16 седишта и чија максимална дужина не прелази осам метара. "
-"Од 21 године старости."
-
-#: categoryselection.ui:584
-msgid ""
-"Motor vehicles for the transport of persons, which in addition to the "
-"driver's seat have more than eight seats. From 24 years of age."
-msgstr ""
-"Моторна возила за превоз лица, која осим седишта за возача имају више од "
-"осам седишта. Од 24 година старости."
-
-#: categoryselection.ui:256
-msgid ""
-"Motor vehicles, except vehicles of category \"A\", \"A1\", \"A2\", \"AM\", "
-"\"F\" and \"M\", which allowed mass does not exceed 3500 kg, and which have "
-"no more than eight seats excluding the driver's seat . From the age of 18."
-msgstr ""
-"Моторна возила, осим возила категорије \"A\", \"A1\", \"A2\", \"AM\", \"F\" "
-"и \"M\", чија дозвољена маса није већа од 3500 kg и која немају више од осам "
-"седишта не рачунајући седиште за возача. Од 18 година старости."
-
-#: categoryselection.ui:338
-msgid ""
-"Motor vehicles, except vehicles of category \"A\", \"A1\", \"A2\", \"AM\", "
-"\"F\", \"M\", \"B\", \"D\" and \"D1\", whose biggest mass allowed is over "
-"3500 kg and does not exceed 7500 kg. From the age of 18."
-msgstr ""
-"Моторна возила, осим возила категорије \"A\", \"A1\", \"A2\", \"AM\", \"F\", "
-"\"M\", \"B\", \"D\", и \"D1\", чија је највећа дозвољена маса већа од 3500 "
-"kg, а није већа од 7500 kg. Од 18 година старости."
+#: categoryselection.ui:402
+msgid "Category \"C1E\""
+msgstr "Категорија \"C1E\""
 
 #: categoryselection.ui:420
 msgid ""
@@ -442,37 +377,73 @@ msgstr ""
 "\"M\", \"B\", \"D\" и \"D1\", чија је највећа дозвољена маса већа од 3.500 "
 "kg. Од 21 године старости."
 
-#: categoryselection.ui:174
-msgid ""
-"Motorcycles and heavy tricycles whose engine power exceeds 35 kW. From 20 to "
-"24 years of age."
-msgstr ""
-"Мотоцикли и тешки трицикли чија снага мотора прелази 35 kW. Од 20 до 24 "
-"година старости."
+#: categoryselection.ui:443
+msgid "Category \"C\""
+msgstr "Категорија \"C\""
 
-#: categoryselection.ui:92
+#: categoryselection.ui:461
 msgid ""
-"Motorcycles volume to 125 ㎤ and engine power up to 11 kW, with the ratio of "
-"engine power and vehicle mass not exceeding 0.1 kW / kg and heavy tricycles "
-"engine power up to 15 kW. From 16 years of age."
+"Collection vehicle which the towing vehicle belongs to category \"C\", a "
+"maximum permitted weight of the trailer is greater than 750 kg. From 21 "
+"years of age."
 msgstr ""
-"Мотоцикли запремине до 125 ㎤ и снаге мотора до 11 kW, чији однос снаге "
-"мотора и масе возила није већи од 0,1 kW/kg и тешки трицикли снаге мотора до "
-"15 kW. Од 16 година старости."
+"Скуп возила чије вучно возило припада категорији \"C\", а највећа дозвољена "
+"маса прикључног возила је већа од 750 kg. Од 21 године старости."
 
-#: categoryselection.ui:133
+#: categoryselection.ui:484
+msgid "Category \"CE\""
+msgstr "Категорија \"CE\""
+
+#: categoryselection.ui:502
 msgid ""
-"Motorcycles whose engine power does not exceed 35 kW and whose ratio of the "
-"engine power and vehicle mass not exceeding 0.2 kW / kg. From the age of 18."
+"Motor vehicles for the transport of persons, which in addition to the "
+"driver's seat have more than eight and a maximum of 16 seats and whose "
+"maximum length not exceeding eight meters. From 21 years of age."
 msgstr ""
-"Мотоцикли чија снага мотора није већа од 35 kW и чији однос снаге мотора и "
-"масе возила није већи од 0,2 kW/kg. Од 18 година старости."
+"Моторна возила за превоз лица, која осим седишта за возача имају више од "
+"осам, а највише 16 седишта и чија максимална дужина не прелази осам метара. "
+"Од 21 године старости."
 
-#: headerbar.ui:71
+#: categoryselection.ui:525
+msgid "Category \"D1\""
+msgstr "Категорија \"D1\""
+
+#: categoryselection.ui:543
 msgid ""
-"Shows the menu for choosing the area and for choosing the option to display "
-"the category chooser"
-msgstr "Приказује изборник за одабир области и за одабир изборника категорије"
+"Collection vehicle which the towing vehicle belongs to category \"D1\" and "
+"the maximum mass of the trailer is greater than 750 kg. From 21 years of age."
+msgstr ""
+"Скуп возила чије вучно возило припада категорији \"D1\", а највећа дозвољена "
+"маса прикључног возила је већа од 750 kg. Од 21 године старости."
+
+#: categoryselection.ui:566
+msgid "Category \"D1E\""
+msgstr "Категорија \"D1E\""
+
+#: categoryselection.ui:584
+msgid ""
+"Motor vehicles for the transport of persons, which in addition to the "
+"driver's seat have more than eight seats. From 24 years of age."
+msgstr ""
+"Моторна возила за превоз лица, која осим седишта за возача имају више од "
+"осам седишта. Од 24 година старости."
+
+#: categoryselection.ui:607
+msgid "Category \"D\""
+msgstr "Категорија \"D\""
+
+#: categoryselection.ui:625
+msgid ""
+"Collection vehicle which the towing vehicle belongs to category \"D \", a "
+"maximum permitted weight of the trailer is greater than 750 kg. From 24 "
+"years of age."
+msgstr ""
+"Скуп возила чије вучно возило припада категорији \"D\", а највећа дозвољена "
+"маса прикључног возила је већа од 750 kg. Од 24 година старости."
+
+#: categoryselection.ui:648
+msgid "Category \"DE\""
+msgstr "Категорија \"DE\""
 
 #: categoryselection.ui:666
 msgid ""
@@ -481,9 +452,51 @@ msgid ""
 msgstr ""
 "Трактори са или без прикључних возила и радне машине. Од 16 година старости."
 
+#: categoryselection.ui:689
+msgid "Category \"F\""
+msgstr "Категорија \"F\""
+
+#: categoryselection.ui:707
+msgid "Motokultivator. From 15 years of age."
+msgstr "Мотокултиватор. Од 15 година старости."
+
+#: categoryselection.ui:730
+msgid "Category \"M\""
+msgstr "Категорија \"M\""
+
+#: headerbar.ui:23
+msgid "Loads the previous question"
+msgstr "Учитава претходно питање"
+
 #: headerbar.ui:59
 msgid "When pressed, enables the loading of random questions"
 msgstr "Уколико је притиснуто, омогућава учитавање насумичних питања"
+
+#: headerbar.ui:71
+msgid ""
+"Shows the menu for choosing the area and for choosing the option to display "
+"the category chooser"
+msgstr "Приказује изборник за одабир области и за одабир изборника категорије"
+
+#: nodb.ui:35
+msgid ""
+"<span size=\"large\" color=\"#828687\"><b>Question database not found</b></"
+"span>"
+msgstr ""
+"<span size=\"large\" color=\"#828687\"><b>База са питањима није пронађена</"
+"b></span>"
+
+#: nodb.ui:48
+msgid ""
+"<span color=\"#828687\">File \"data.db\" which contains the questions can't "
+"be found. For you to continue testing your knowledge, you need to paste this "
+"database in the folder where this program is located and then restart this "
+"program.</span>"
+msgstr ""
+"<span color=\"#828687\">Датотека \"data.db\" која садржи питања није "
+"пронађена. Да бисте могли да тестирате ваше знање, потребно је да ову базу "
+"убаците у фасциклу где се налази овај програм и да поново покрените програм."
+"</span>"
 
 #: partselection.ui:27
 msgid ""
@@ -494,19 +507,6 @@ msgstr ""
 "Сада изаберите област коју желите да вежбате.\n"
 "То можете урадити тако што ћете кликнути на\n"
 "мени поред икс дугмета за излаз из програма."
-
-#: appmenu.ui:8
-msgid "_About"
-msgstr "_О програму"
-
-#: appmenu.ui:14
-msgid "_Quit"
-msgstr "_Изађи"
-
-#: questionwindow.ui:224 questionwindow.ui:248 questionwindow.ui:272
-#: questionwindow.ui:296 questionwindow.ui:320 questionwindow.ui:344
-msgid "label"
-msgstr "етикета"
 
 #: questionwindow.ui:25
 msgid "question"
@@ -520,18 +520,23 @@ msgstr "решење11"
 msgid "solution12"
 msgstr "решење12"
 
-#: questionwindow.ui:177
-msgid "solution13"
-msgstr "решење13"
+#: questionwindow.ui:78
+msgid "solution22"
+msgstr "решење22"
 
 #: questionwindow.ui:131
 msgid "solution21"
 msgstr "решење21"
 
-#: questionwindow.ui:78
-msgid "solution22"
-msgstr "решење22"
+#: questionwindow.ui:177
+msgid "solution13"
+msgstr "решење13"
 
 #: questionwindow.ui:189
 msgid "solution23"
 msgstr "решење23"
+
+#: questionwindow.ui:224 questionwindow.ui:248 questionwindow.ui:272
+#: questionwindow.ui:296 questionwindow.ui:320 questionwindow.ui:344
+msgid "label"
+msgstr "етикета"
