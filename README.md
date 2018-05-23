@@ -40,7 +40,7 @@ these assets can be distributed, you will need to download the question database
 
 To see how this program works, download database with questions into the folder where the program
 is located. If you have installed the program as described in the Installation section, download
-the assets with `sudo curl http://костић.срб/data.db -o /usr/share/semafor/data.db` and restart
+the assets with `sudo curl -L https://костић.срб/data.db -o /usr/share/semafor/data.db` and restart
 the program.
 
 If running the program locally, just do `curl http://костић.срб/data.db -o ./data.db` while
