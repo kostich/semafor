@@ -43,7 +43,7 @@ is located. If you have installed the program as described in the Installation s
 the assets with `sudo curl -L https://костић.срб/data.db -o /usr/share/semafor/data.db` and restart
 the program.
 
-If running the program locally, just do `curl http://костић.срб/data.db -o ./data.db` while
+If running the program locally, just do `curl -L https://костић.срб/data.db -o ./data.db` while
 in the directory where you cloned the code and restart the program.
 
 ## Usage on Windows
